@@ -1,331 +1,963 @@
-<!DOCTYPE html><html><head>
-      <title>index</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
-      <link rel="stylesheet" href="file:///c:\Users\leisure\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.1\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
-      
-      
+<!DOCTYPE html>
+<html>
 
-      
-      
-      
-      
-      
-      
-      
-
-      <style>
-      /**
+<head>
+  <title>index</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /**
  * prism.js Github theme based on GitHub's theme.
  * @author Sam Clarke
  */
-code[class*="language-"],
-pre[class*="language-"] {
-  color: #333;
-  background: none;
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  word-wrap: normal;
-  line-height: 1.4;
+    code[class*="language-"],
+    pre[class*="language-"] {
+      color: #333;
+      background: none;
+      font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+      text-align: left;
+      white-space: pre;
+      word-spacing: normal;
+      word-break: normal;
+      word-wrap: normal;
+      line-height: 1.4;
 
-  -moz-tab-size: 8;
-  -o-tab-size: 8;
-  tab-size: 8;
+      -moz-tab-size: 8;
+      -o-tab-size: 8;
+      tab-size: 8;
 
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
-}
+      -webkit-hyphens: none;
+      -moz-hyphens: none;
+      -ms-hyphens: none;
+      hyphens: none;
+    }
 
-/* Code blocks */
-pre[class*="language-"] {
-  padding: .8em;
-  overflow: auto;
-  /* border: 1px solid #ddd; */
-  border-radius: 3px;
-  /* background: #fff; */
-  background: #f5f5f5;
-}
+    /* Code blocks */
+    pre[class*="language-"] {
+      padding: .8em;
+      overflow: auto;
+      /* border: 1px solid #ddd; */
+      border-radius: 3px;
+      /* background: #fff; */
+      background: #f5f5f5;
+    }
 
-/* Inline code */
-:not(pre) > code[class*="language-"] {
-  padding: .1em;
-  border-radius: .3em;
-  white-space: normal;
-  background: #f5f5f5;
-}
+    /* Inline code */
+    :not(pre)>code[class*="language-"] {
+      padding: .1em;
+      border-radius: .3em;
+      white-space: normal;
+      background: #f5f5f5;
+    }
 
-.token.comment,
-.token.blockquote {
-  color: #969896;
-}
+    .token.comment,
+    .token.blockquote {
+      color: #969896;
+    }
 
-.token.cdata {
-  color: #183691;
-}
+    .token.cdata {
+      color: #183691;
+    }
 
-.token.doctype,
-.token.punctuation,
-.token.variable,
-.token.macro.property {
-  color: #333;
-}
+    .token.doctype,
+    .token.punctuation,
+    .token.variable,
+    .token.macro.property {
+      color: #333;
+    }
 
-.token.operator,
-.token.important,
-.token.keyword,
-.token.rule,
-.token.builtin {
-  color: #a71d5d;
-}
+    .token.operator,
+    .token.important,
+    .token.keyword,
+    .token.rule,
+    .token.builtin {
+      color: #a71d5d;
+    }
 
-.token.string,
-.token.url,
-.token.regex,
-.token.attr-value {
-  color: #183691;
-}
+    .token.string,
+    .token.url,
+    .token.regex,
+    .token.attr-value {
+      color: #183691;
+    }
 
-.token.property,
-.token.number,
-.token.boolean,
-.token.entity,
-.token.atrule,
-.token.constant,
-.token.symbol,
-.token.command,
-.token.code {
-  color: #0086b3;
-}
+    .token.property,
+    .token.number,
+    .token.boolean,
+    .token.entity,
+    .token.atrule,
+    .token.constant,
+    .token.symbol,
+    .token.command,
+    .token.code {
+      color: #0086b3;
+    }
 
-.token.tag,
-.token.selector,
-.token.prolog {
-  color: #63a35c;
-}
+    .token.tag,
+    .token.selector,
+    .token.prolog {
+      color: #63a35c;
+    }
 
-.token.function,
-.token.namespace,
-.token.pseudo-element,
-.token.class,
-.token.class-name,
-.token.pseudo-class,
-.token.id,
-.token.url-reference .token.variable,
-.token.attr-name {
-  color: #795da3;
-}
+    .token.function,
+    .token.namespace,
+    .token.pseudo-element,
+    .token.class,
+    .token.class-name,
+    .token.pseudo-class,
+    .token.id,
+    .token.url-reference .token.variable,
+    .token.attr-name {
+      color: #795da3;
+    }
 
-.token.entity {
-  cursor: help;
-}
+    .token.entity {
+      cursor: help;
+    }
 
-.token.title,
-.token.title .token.punctuation {
-  font-weight: bold;
-  color: #1d3e81;
-}
+    .token.title,
+    .token.title .token.punctuation {
+      font-weight: bold;
+      color: #1d3e81;
+    }
 
-.token.list {
-  color: #ed6a43;
-}
+    .token.list {
+      color: #ed6a43;
+    }
 
-.token.inserted {
-  background-color: #eaffea;
-  color: #55a532;
-}
+    .token.inserted {
+      background-color: #eaffea;
+      color: #55a532;
+    }
 
-.token.deleted {
-  background-color: #ffecec;
-  color: #bd2c00;
-}
+    .token.deleted {
+      background-color: #ffecec;
+      color: #bd2c00;
+    }
 
-.token.bold {
-  font-weight: bold;
-}
+    .token.bold {
+      font-weight: bold;
+    }
 
-.token.italic {
-  font-style: italic;
-}
+    .token.italic {
+      font-style: italic;
+    }
 
 
-/* JSON */
-.language-json .token.property {
-  color: #183691;
-}
+    /* JSON */
+    .language-json .token.property {
+      color: #183691;
+    }
 
-.language-markup .token.tag .token.punctuation {
-  color: #333;
-}
+    .language-markup .token.tag .token.punctuation {
+      color: #333;
+    }
 
-/* CSS */
-code.language-css,
-.language-css .token.function {
-  color: #0086b3;
-}
+    /* CSS */
+    code.language-css,
+    .language-css .token.function {
+      color: #0086b3;
+    }
 
-/* YAML */
-.language-yaml .token.atrule {
-  color: #63a35c;
-}
+    /* YAML */
+    .language-yaml .token.atrule {
+      color: #63a35c;
+    }
 
-code.language-yaml {
-  color: #183691;
-}
+    code.language-yaml {
+      color: #183691;
+    }
 
-/* Ruby */
-.language-ruby .token.function {
-  color: #333;
-}
+    /* Ruby */
+    .language-ruby .token.function {
+      color: #333;
+    }
 
-/* Markdown */
-.language-markdown .token.url {
-  color: #795da3;
-}
+    /* Markdown */
+    .language-markdown .token.url {
+      color: #795da3;
+    }
 
-/* Makefile */
-.language-makefile .token.symbol {
-  color: #795da3;
-}
+    /* Makefile */
+    .language-makefile .token.symbol {
+      color: #795da3;
+    }
 
-.language-makefile .token.variable {
-  color: #183691;
-}
+    .language-makefile .token.variable {
+      color: #183691;
+    }
 
-.language-makefile .token.builtin {
-  color: #0086b3;
-}
+    .language-makefile .token.builtin {
+      color: #0086b3;
+    }
 
-/* Bash */
-.language-bash .token.keyword {
-  color: #0086b3;
-}
+    /* Bash */
+    .language-bash .token.keyword {
+      color: #0086b3;
+    }
 
-/* highlight */
-pre[data-line] {
-  position: relative;
-  padding: 1em 0 1em 3em;
-}
-pre[data-line] .line-highlight-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: transparent;
-  display: block;
-  width: 100%;
-}
+    /* highlight */
+    pre[data-line] {
+      position: relative;
+      padding: 1em 0 1em 3em;
+    }
 
-pre[data-line] .line-highlight {
-  position: absolute;
-  left: 0;
-  right: 0;
-  padding: inherit 0;
-  margin-top: 1em;
-  background: hsla(24, 20%, 50%,.08);
-  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
-  pointer-events: none;
-  line-height: inherit;
-  white-space: pre;
-}
+    pre[data-line] .line-highlight-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: transparent;
+      display: block;
+      width: 100%;
+    }
 
-pre[data-line] .line-highlight:before, 
-pre[data-line] .line-highlight[data-end]:after {
-  content: attr(data-start);
-  position: absolute;
-  top: .4em;
-  left: .6em;
-  min-width: 1em;
-  padding: 0 .5em;
-  background-color: hsla(24, 20%, 50%,.4);
-  color: hsl(24, 20%, 95%);
-  font: bold 65%/1.5 sans-serif;
-  text-align: center;
-  vertical-align: .3em;
-  border-radius: 999px;
-  text-shadow: none;
-  box-shadow: 0 1px white;
-}
+    pre[data-line] .line-highlight {
+      position: absolute;
+      left: 0;
+      right: 0;
+      padding: inherit 0;
+      margin-top: 1em;
+      background: hsla(24, 20%, 50%, .08);
+      background: linear-gradient(to right, hsla(24, 20%, 50%, .1) 70%, hsla(24, 20%, 50%, 0));
+      pointer-events: none;
+      line-height: inherit;
+      white-space: pre;
+    }
 
-pre[data-line] .line-highlight[data-end]:after {
-  content: attr(data-end);
-  top: auto;
-  bottom: .4em;
-}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
-/* Please visit the URL below for more information: */
-/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+    pre[data-line] .line-highlight:before,
+    pre[data-line] .line-highlight[data-end]:after {
+      content: attr(data-start);
+      position: absolute;
+      top: .4em;
+      left: .6em;
+      min-width: 1em;
+      padding: 0 .5em;
+      background-color: hsla(24, 20%, 50%, .4);
+      color: hsl(24, 20%, 95%);
+      font: bold 65%/1.5 sans-serif;
+      text-align: center;
+      vertical-align: .3em;
+      border-radius: 999px;
+      text-shadow: none;
+      box-shadow: 0 1px white;
+    }
 
-      </style>
-    </head>
-    <body for="html-export">
-      <div class="mume markdown-preview  ">
-      <h1>&#x7528; github pages &#x5EFA;&#x7ACB; Blog!</h1>
-<ul>
-<li><a href="#%E4%BB%80%E9%BA%BD%E6%98%AF-github-pages">&#x4EC0;&#x9EBD;&#x662F; github pages?</a></li>
-<li><a href="#%E4%B8%BA%E4%BB%80%E9%BA%BD%E8%A6%81%E4%BD%BF%E7%94%A8-github-pages">&#x4E3A;&#x4EC0;&#x9EBD;&#x8981;&#x4F7F;&#x7528; github pages?</a></li>
-<li><a href="#%E5%BC%80%E5%A7%8B%E5%BB%BA%E7%AB%8Bgithub-pages">&#x5F00;&#x59CB;&#x5EFA;&#x7ACB;github pages</a>
-<ul>
-<li><a href="#%E5%BB%BA%E7%AB%8B%E5%89%8D%E7%9A%84%E5%87%86%E5%A4%87">&#x5EFA;&#x7ACB;&#x524D;&#x7684;&#x51C6;&#x5907;</a></li>
-<li><a href="#%E5%BB%BA%E7%AB%8B%E4%B8%80%E4%B8%AA%E4%BB%93%E5%BA%93repository">&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x4ED3;&#x5E93;(Repository)</a></li>
-<li><a href="#%E7%BC%96%E8%BE%91%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%A1%B5%E9%9D%A2">&#x7F16;&#x8F91;&#x7B2C;&#x4E00;&#x4E2A;&#x9875;&#x9762;</a></li>
-<li><a href="#%E5%B0%86%E9%A1%B5%E9%9D%A2%E6%8E%A8%E9%80%81%E4%B8%8A%E7%BA%BF">&#x5C06;&#x9875;&#x9762;&#x63A8;&#x9001;&#x4E0A;&#x7EBF;</a></li>
-<li><a href="#%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8A%E6%9F%A5%E7%9C%8B">&#x6D4F;&#x89C8;&#x5668;&#x4E0A;&#x67E5;&#x770B;</a></li>
-</ul>
-</li>
-<li><a href="#%E5%BB%BA%E7%AB%8B%E5%85%B6%E4%BB%96%E9%A1%B9%E7%9B%AE%E4%BB%93%E5%BA%93">&#x5EFA;&#x7ACB;&#x5176;&#x4ED6;&#x9879;&#x76EE;&#x4ED3;&#x5E93;</a>
-<ul>
-<li><a href="#%E5%9C%A8%E6%9C%AC%E5%9C%B0%E6%8C%87%E5%AE%9A%E7%9B%AE%E5%BD%95clone%E9%A1%B9%E7%9B%AE">&#x5728;&#x672C;&#x5730;&#x6307;&#x5B9A;&#x76EE;&#x5F55;clone&#x9879;&#x76EE;</a></li>
-<li><a href="#%E5%BB%BA%E7%AB%8B-gh-pages-branch">&#x5EFA;&#x7ACB; gh-pages branch</a></li>
-<li><a href="#%E5%9C%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8A%E6%9F%A5%E7%9C%8B">&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E0A;&#x67E5;&#x770B;</a></li>
-<li><a href="#%E7%BB%93%E8%AE%BA">&#x7ED3;&#x8BBA;</a></li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 class="mume-header" id="%E4%BB%80%E9%BA%BD%E6%98%AF-github-pages">&#x4EC0;&#x9EBD;&#x662F; github pages?</h2>
+    pre[data-line] .line-highlight[data-end]:after {
+      content: attr(data-end);
+      top: auto;
+      bottom: .4em;
+    }
 
-<p>GitHub Pages&#x662F;GitHub&#x63D0;&#x4F9B;&#x7684;&#x4E00;&#x4E2A;&#x7F51;&#x9875;&#x5BC4;&#x5B58;&#x670D;&#x52A1;&#xFF0C;&#x4E8E;2008&#x5E74;&#x63A8;&#x51FA;&#x3002;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x5B58;&#x653E;&#x9759;&#x6001;&#x7F51;&#x9875;&#xFF0C;&#x5305;&#x62EC;&#x535A;&#x5BA2;&#x3001;&#x9879;&#x76EE;&#x6587;&#x6863;&#x751A;&#x81F3;&#x6574;&#x672C;&#x4E66;&#x3002;Jekyll&#x8F6F;&#x4EF6;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x5C06;&#x6587;&#x6863;&#x8F6C;&#x6362;&#x6210;&#x9759;&#x6001;&#x7F51;&#x9875;&#xFF0C;&#x8BE5;&#x8F6F;&#x4EF6;&#x63D0;&#x4F9B;&#x4E86;&#x5C06;&#x7F51;&#x9875;&#x4E0A;&#x4F20;&#x5230;GitHub Pages&#x7684;&#x529F;&#x80FD;</p>
-<p>&#x2500; &#x7EF4;&#x57FA;&#x767E;&#x79D1;</p>
-<h2 class="mume-header" id="%E4%B8%BA%E4%BB%80%E9%BA%BD%E8%A6%81%E4%BD%BF%E7%94%A8-github-pages">&#x4E3A;&#x4EC0;&#x9EBD;&#x8981;&#x4F7F;&#x7528; github pages?</h2>
+    html body {
+      font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
+      background-color: #fff;
+      overflow: initial;
+      box-sizing: border-box;
+      word-wrap: break-word
+    }
 
-<p>&#x867D;&#x7136;&#x8BF4;GitHub Pages&#x662F;GitHub&#x63D0;&#x4F9B;&#x7684;&#x4E00;&#x4E2A;&#x7F51;&#x9875;&#x5BC4;&#x5B58;&#x670D;&#x52A1;&#xFF0C;&#x4F46;github&#x4F7F;&#x7528;&#x4EBA;&#x6570;&#x975E;&#x5E38;&#x591A;&#xFF0C;&#x4E14;&#x4F7F;&#x7528;GitHub Pages&#x7684;&#x8BDD;&#x65E0;&#x987B;&#x91CD;&#x65B0;&#x914D;&#x7F6E;&#x65B0;&#x7684;&#x57DF;&#x540D;&#xFF0C;&#x4F7F;&#x7528;&#x51E0;&#x4E2A;&#x6B65;&#x9AA4;&#x5373;&#x53EF;&#x642D;&#x5EFA;&#x597D;&#x4E00;&#x4E2A;&#x9759;&#x6001;&#x7F51;&#x7AD9;&#x3002;</p>
-<p>&#x82E5;&#x53EA;&#x662F;&#x7528;&#x4E8E;&#x5206;&#x4EAB;&#x6280;&#x672F;&#x7684;&#x8BDD;&#x662F;&#x4E2A;&#x5F88;&#x597D;&#x7684;&#x5E73;&#x53F0;&#xFF0C;&#x4E14;&#x6280;&#x672F;&#x96BE;&#x5EA6;&#x4F4E;!</p>
-<p>&#x4E4B;&#x540E;&#x4E5F;&#x80FD;&#x5C06;&#x4EE3;&#x7801;&#x76F4;&#x63A5;&#x653E;&#x7F6E;&#x5728;github&#x4ED3;&#x5E93;&#x4E2D;&#xFF0C;&#x4F18;&#x5316;&#x7B80;&#x5386;&#x4E0E;&#x4F5C;&#x54C1;&#x3002;</p>
-<p>&#x82E5;&#x5E73;&#x65F6;&#x6709;&#x8BD5;&#x7740;&#x4E60;&#x60EF;&#x64B0;&#x5199;&#x6280;&#x672F;&#x6587;&#x7AE0;&#x7684;&#x8BDD;&#xFF0C;&#x5BF9;&#x6C9F;&#x901A;&#x4E0E;&#x4EE3;&#x7801;&#x7684;&#x7406;&#x89E3;&#x6027;&#x4E5F;&#x80FD;&#x66F4;&#x9AD8;&#x3002;</p>
-<h2 class="mume-header" id="%E5%BC%80%E5%A7%8B%E5%BB%BA%E7%AB%8Bgithub-pages">&#x5F00;&#x59CB;&#x5EFA;&#x7ACB;github pages</h2>
+    html body>:first-child {
+      margin-top: 0
+    }
 
-<h4 class="mume-header" id="%E5%BB%BA%E7%AB%8B%E5%89%8D%E7%9A%84%E5%87%86%E5%A4%87">&#x5EFA;&#x7ACB;&#x524D;&#x7684;&#x51C6;&#x5907;</h4>
+    html body h1,
+    html body h2,
+    html body h3,
+    html body h4,
+    html body h5,
+    html body h6 {
+      line-height: 1.2;
+      margin-top: 1em;
+      margin-bottom: 16px;
+      color: #000
+    }
 
-<ol>
-<li>&#x9700;&#x8981;&#x5148;<a href="https://github.com/">&#x5EFA;&#x7ACB;git&#x5E10;&#x53F7;</a></li>
-<li>&#x9700;&#x8981;<a href="https://git-scm.com/downloads">&#x4E0B;&#x8F7D;&#x5E76;&#x5B89;&#x88C5;</a>&#x597D;git</li>
-</ol>
-<h4 class="mume-header" id="%E5%BB%BA%E7%AB%8B%E4%B8%80%E4%B8%AA%E4%BB%93%E5%BA%93repository">&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x4ED3;&#x5E93;(Repository)</h4>
+    html body h1 {
+      font-size: 2.25em;
+      font-weight: 300;
+      padding-bottom: .3em
+    }
 
-<p>&#x767B;&#x5165;<a href="https://github.com/">github</a>&#x540E;&#xFF0C;&#x70B9;&#x51FB;&#x53F3;&#x4E0A;&#x89D2;&#x7684; &#x300C;+&#x300D; &#x5E76;&#x9009;&#x62E9; &#x300C;New repository&#x300D;</p>
-<div class="g-img"><a href="../image/06.png" target="_blank">
-    <img src="../image/06.png">
-</a></div>
-<p>Repository name &#x4E2D;&#x8F93;&#x5165; &#x300C;<a href="http://xn--github-ud6j708d.github.io">github&#x5E10;&#x53F7;.github.io</a>&#x300D;&#xFF0C;&#x8F93;&#x5165;&#x5B8C;&#x540E;&#x70B9;&#x51FB;&#x4E0B;&#x65B9;&#x7684; &#x300C;Create resposltory&#x300D;</p>
-<div class="g-img"><a href="../image/01.png" target="_blank">
-    <img src="../image/01.png">
-</a></div>
-<p>&#x63A5;&#x7740;&#x5C31;&#x80FD;&#x770B;&#x89C1;&#x7684;&#x753B;&#x9762;&#xFF0C;&#x4E4B;&#x540E;&#x53EF;&#x5728;&#x300C;Your profile&#x300D;&#x4E2D;&#x67E5;&#x770B;&#x521A;&#x521A;&#x5EFA;&#x7ACB;&#x7684;&#x9879;&#x76EE;&#x3002;&#x8FDB;&#x5165;&#x9879;&#x76EE;&#x540E;&#x4E0A;&#x9762;&#x6709;&#x4F60;&#x9879;&#x76EE;&#x7684;git&#x4ED3;&#x5E93;&#x94FE;&#x63A5;&#xFF0C;&#x4F60;&#x80FD;&#x591F;&#x4F9D;&#x7167;&#x4E0A;&#x9762;&#x6240;&#x6559;&#x7684;&#x6B65;&#x9AA4;&#x5728;&#x4F60;&#x7684;&#x7535;&#x8111;&#x4E0A;&#x90E8;&#x5C5E;&#x3002;&#x6216;&#x7528;&#x300C;git clone &#x4ED3;&#x5E93;&#x5730;&#x5740;&#x300D;&#x7684;&#x65B9;&#x5F0F;&#x8BBE;&#x5B9A;&#xFF08;&#x5728;&#x4F7F;&#x7528;git&#x4EE3;&#x7801;&#x524D;&#x4F60;&#x9996;&#x5148;&#x8981;&#x53BB;<a href="https://git-scm.com/downloads">&#x4E0B;&#x8F7D;git</a>&#xFF0C;&#x624D;&#x80FD;&#x5728;&#x7535;&#x8111;&#x4E0A;&#x4F7F;&#x7528;&#xFF09;</p>
-<div class="g-img"><a href="../image/07.png" target="_blank">
-    <img src="../image/07.png">
-</a></div>
-<h4 class="mume-header" id="%E7%BC%96%E8%BE%91%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%A1%B5%E9%9D%A2">&#x7F16;&#x8F91;&#x7B2C;&#x4E00;&#x4E2A;&#x9875;&#x9762;</h4>
+    html body h2 {
+      font-size: 1.75em;
+      font-weight: 400;
+      padding-bottom: .3em
+    }
 
-<p>&#x5728;&#x8BBE;&#x5B9A;&#x597D;&#x9879;&#x76EE;&#x540E;&#xFF0C;&#x8FDB;&#x5165;&#x76EE;&#x5F55;&#x4E2D;&#x3002;&#x5E76;&#x5728;&#x8BE5;&#x76EE;&#x5F55;&#x4E0B;&#x65B0;&#x589E;&#x4E00;&#x9875;&#x300C;index.html&#x300D;(&#x9875;&#x9762;&#x5185;&#x5BB9;&#x80FD;&#x81EA;&#x884C;&#x7F16;&#x8F91;)&#x3002;&#x5728;&#x63A8;&#x9001;&#x4E0A;&#x7EBF;&#x540E;&#x6253;&#x5F00;&#x94FE;&#x63A5;&#xFF0C;&#x5C31;&#x80FD;&#x76F4;&#x63A5;&#x67E5;&#x770B;&#x8BE5;&#x9875;&#x9762;&#x3002;</p>
-<br>
-<p>&#x9879;&#x76EE;&#x4F4D;&#x7F6E;&#xFF0C;&#x4F9D;&#x636E;&#x4E2A;&#x4EBA;&#x8BBE;&#x5B9A;&#x7684;&#x9879;&#x76EE;&#x4F4D;&#x7F6E;&#x8FDB;&#x5165;&#x3002;</p>
-<pre data-role="codeBlock" data-info="git" class="language-git">G:\leisure0621.github.io
-</pre><p>&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#xFF0C;&#x53EF;&#x4EE5;&#x4F9D;&#x9700;&#x6C42;&#x81EA;&#x884C;&#x4FEE;&#x6539;&#x3002;</p>
-<pre data-role="codeBlock" data-info="html" class="language-html"><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+    html body h3 {
+      font-size: 1.5em;
+      font-weight: 500
+    }
+
+    html body h4 {
+      font-size: 1.25em;
+      font-weight: 600
+    }
+
+    html body h5 {
+      font-size: 1.1em;
+      font-weight: 600
+    }
+
+    html body h6 {
+      font-size: 1em;
+      font-weight: 600
+    }
+
+    html body h1,
+    html body h2,
+    html body h3,
+    html body h4,
+    html body h5 {
+      font-weight: 600
+    }
+
+    html body h5 {
+      font-size: 1em
+    }
+
+    html body h6 {
+      color: #5c5c5c
+    }
+
+    html body strong {
+      color: #000
+    }
+
+    html body del {
+      color: #5c5c5c
+    }
+
+    html body a:not([href]) {
+      color: inherit;
+      text-decoration: none
+    }
+
+    html body a {
+      color: #08c;
+      text-decoration: none
+    }
+
+    html body a:hover {
+      color: #00a3f5;
+      text-decoration: none
+    }
+
+    html body img {
+      max-width: 100%
+    }
+
+    html body>p {
+      margin-top: 0;
+      margin-bottom: 16px;
+      word-wrap: break-word
+    }
+
+    html body>ul,
+    html body>ol {
+      margin-bottom: 16px
+    }
+
+    html body ul,
+    html body ol {
+      padding-left: 2em
+    }
+
+    html body ul.no-list,
+    html body ol.no-list {
+      padding: 0;
+      list-style-type: none
+    }
+
+    html body ul ul,
+    html body ul ol,
+    html body ol ol,
+    html body ol ul {
+      margin-top: 0;
+      margin-bottom: 0
+    }
+
+    html body li {
+      margin-bottom: 0
+    }
+
+    html body li.task-list-item {
+      list-style: none
+    }
+
+    html body li>p {
+      margin-top: 0;
+      margin-bottom: 0
+    }
+
+    html body .task-list-item-checkbox {
+      margin: 0 .2em .25em -1.8em;
+      vertical-align: middle
+    }
+
+    html body .task-list-item-checkbox:hover {
+      cursor: pointer
+    }
+
+    html body blockquote {
+      margin: 16px 0;
+      font-size: inherit;
+      padding: 0 15px;
+      color: #5c5c5c;
+      border-left: 4px solid #d6d6d6
+    }
+
+    html body blockquote>:first-child {
+      margin-top: 0
+    }
+
+    html body blockquote>:last-child {
+      margin-bottom: 0
+    }
+
+    html body hr {
+      height: 4px;
+      margin: 32px 0;
+      background-color: #d6d6d6;
+      border: 0 none
+    }
+
+    html body table {
+      margin: 10px 0 15px 0;
+      border-collapse: collapse;
+      border-spacing: 0;
+      display: block;
+      width: 100%;
+      overflow: auto;
+      word-break: normal;
+      word-break: keep-all
+    }
+
+    html body table th {
+      font-weight: bold;
+      color: #000
+    }
+
+    html body table td,
+    html body table th {
+      border: 1px solid #d6d6d6;
+      padding: 6px 13px
+    }
+
+    html body dl {
+      padding: 0
+    }
+
+    html body dl dt {
+      padding: 0;
+      margin-top: 16px;
+      font-size: 1em;
+      font-style: italic;
+      font-weight: bold
+    }
+
+    html body dl dd {
+      padding: 0 16px;
+      margin-bottom: 16px
+    }
+
+    html body code {
+      font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+      font-size: .85em !important;
+      color: #000;
+      background-color: #f0f0f0;
+      border-radius: 3px;
+      padding: .2em 0
+    }
+
+    html body code::before,
+    html body code::after {
+      letter-spacing: -0.2em;
+      content: "\00a0"
+    }
+
+    html body pre>code {
+      padding: 0;
+      margin: 0;
+      font-size: .85em !important;
+      word-break: normal;
+      white-space: pre;
+      background: transparent;
+      border: 0
+    }
+
+    html body .highlight {
+      margin-bottom: 16px
+    }
+
+    html body .highlight pre,
+    html body pre {
+      padding: 1em;
+      overflow: auto;
+      font-size: .85em !important;
+      line-height: 1.45;
+      border: #d6d6d6;
+      border-radius: 3px
+    }
+
+    html body .highlight pre {
+      margin-bottom: 0;
+      word-break: normal
+    }
+
+    html body pre code,
+    html body pre tt {
+      display: inline;
+      max-width: initial;
+      padding: 0;
+      margin: 0;
+      overflow: initial;
+      line-height: inherit;
+      word-wrap: normal;
+      background-color: transparent;
+      border: 0
+    }
+
+    html body pre code:before,
+    html body pre tt:before,
+    html body pre code:after,
+    html body pre tt:after {
+      content: normal
+    }
+
+    html body p,
+    html body blockquote,
+    html body ul,
+    html body ol,
+    html body dl,
+    html body pre {
+      margin-top: 0;
+      margin-bottom: 16px
+    }
+
+    html body kbd {
+      color: #000;
+      border: 1px solid #d6d6d6;
+      border-bottom: 2px solid #c7c7c7;
+      padding: 2px 4px;
+      background-color: #f0f0f0;
+      border-radius: 3px
+    }
+
+    @media print {
+      html body {
+        background-color: #fff
+      }
+
+      html body h1,
+      html body h2,
+      html body h3,
+      html body h4,
+      html body h5,
+      html body h6 {
+        color: #000;
+        page-break-after: avoid
+      }
+
+      html body blockquote {
+        color: #5c5c5c
+      }
+
+      html body pre {
+        page-break-inside: avoid
+      }
+
+      html body table {
+        display: table
+      }
+
+      html body img {
+        display: block;
+        max-width: 100%;
+        max-height: 100%
+      }
+
+      html body pre,
+      html body code {
+        word-wrap: break-word;
+        white-space: pre
+      }
+    }
+
+    .markdown-preview {
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box
+    }
+
+    .markdown-preview .pagebreak,
+    .markdown-preview .newpage {
+      page-break-before: always
+    }
+
+    .markdown-preview pre.line-numbers {
+      position: relative;
+      padding-left: 3.8em;
+      counter-reset: linenumber
+    }
+
+    .markdown-preview pre.line-numbers>code {
+      position: relative
+    }
+
+    .markdown-preview pre.line-numbers .line-numbers-rows {
+      position: absolute;
+      pointer-events: none;
+      top: 1em;
+      font-size: 100%;
+      left: 0;
+      width: 3em;
+      letter-spacing: -1px;
+      border-right: 1px solid #999;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none
+    }
+
+    .markdown-preview pre.line-numbers .line-numbers-rows>span {
+      pointer-events: none;
+      display: block;
+      counter-increment: linenumber
+    }
+
+    .markdown-preview pre.line-numbers .line-numbers-rows>span:before {
+      content: counter(linenumber);
+      color: #999;
+      display: block;
+      padding-right: .8em;
+      text-align: right
+    }
+
+    .markdown-preview .mathjax-exps .MathJax_Display {
+      text-align: center !important
+    }
+
+    .markdown-preview:not([for="preview"]) .code-chunk .btn-group {
+      display: none
+    }
+
+    .markdown-preview:not([for="preview"]) .code-chunk .status {
+      display: none
+    }
+
+    .markdown-preview:not([for="preview"]) .code-chunk .output-div {
+      margin-bottom: 16px
+    }
+
+    .scrollbar-style::-webkit-scrollbar {
+      width: 8px
+    }
+
+    .scrollbar-style::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background-color: transparent
+    }
+
+    .scrollbar-style::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background-color: rgba(150, 150, 150, 0.66);
+      border: 4px solid rgba(150, 150, 150, 0.66);
+      background-clip: content-box
+    }
+
+    html body[for="html-export"]:not([data-presentation-mode]) {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      margin: 0;
+      padding: 0;
+      overflow: auto
+    }
+
+    html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview {
+      position: relative;
+      top: 0
+    }
+
+    @media screen and (min-width:914px) {
+      html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview {
+        padding: 2em calc(50% - 457px + 2em)
+      }
+    }
+
+    @media screen and (max-width:914px) {
+      html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview {
+        padding: 2em
+      }
+    }
+
+    @media screen and (max-width:450px) {
+      html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview {
+        font-size: 14px !important;
+        padding: 1em
+      }
+    }
+
+    @media print {
+      html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn {
+        display: none
+      }
+    }
+
+    html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn {
+      position: fixed;
+      bottom: 8px;
+      left: 8px;
+      font-size: 28px;
+      cursor: pointer;
+      color: inherit;
+      z-index: 99;
+      width: 32px;
+      text-align: center;
+      opacity: .4
+    }
+
+    html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn {
+      opacity: 1
+    }
+
+    html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 300px;
+      height: 100%;
+      padding: 32px 0 48px 0;
+      font-size: 14px;
+      box-shadow: 0 0 4px rgba(150, 150, 150, 0.33);
+      box-sizing: border-box;
+      overflow: auto;
+      background-color: inherit
+    }
+
+    html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar {
+      width: 8px
+    }
+
+    html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background-color: transparent
+    }
+
+    html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background-color: rgba(150, 150, 150, 0.66);
+      border: 4px solid rgba(150, 150, 150, 0.66);
+      background-clip: content-box
+    }
+
+    html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a {
+      text-decoration: none
+    }
+
+    html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul {
+      padding: 0 1.6em;
+      margin-top: .8em
+    }
+
+    html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li {
+      margin-bottom: .8em
+    }
+
+    html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul {
+      list-style-type: none
+    }
+
+    html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview {
+      left: 300px;
+      width: calc(100% - 300px);
+      padding: 2em calc(50% - 457px - 150px);
+      margin: 0;
+      box-sizing: border-box
+    }
+
+    @media screen and (max-width:1274px) {
+      html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview {
+        padding: 2em
+      }
+    }
+
+    @media screen and (max-width:450px) {
+      html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview {
+        width: 100%
+      }
+    }
+
+    html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview {
+      left: 50%;
+      transform: translateX(-50%)
+    }
+
+    html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc {
+      display: none
+    }
+
+    /* Please visit the URL below for more information: */
+    /*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+    /* 额外调整 */
+    pre[class*="language-"] {
+      background: rgba(0, 0, 0, 0) !important;
+      box-shadow: 0px 0px 3px rgb(222, 222, 222);
+      border-left: 3px solid rgba(0, 150, 136, 1);
+      border-radius: 0 !important;
+    }
+
+    pre[class="language-game-select"] * {
+      color: #d42b2b !important;
+    }
+
+    html body table {
+      display: table !important;
+    }
+
+    .g-hr {
+      border-bottom: 1px dashed rgba(0, 150, 136, 1);
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+      height: auto;
+      background-color: transparent;
+    }
+
+    html body {
+      font-family: 'Microsoft YaHei', "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif !important;
+    }
+
+    .g-img {
+      text-align: center;
+    }
+
+    .g-img img {
+      border: 1px solid #d6d6d6;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body for="html-export">
+  <div class="mume markdown-preview  ">
+    <h1>&#x7528; github pages &#x5EFA;&#x7ACB; Blog!</h1>
+    <ul>
+      <li><a href="#%E4%BB%80%E4%B9%88%E6%98%AF-github-pages">&#x4EC0;&#x4E48;&#x662F; github pages?</a></li>
+      <li><a
+          href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8-github-pages">&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x4F7F;&#x7528;
+          github pages?</a></li>
+      <li><a href="#%E5%BC%80%E5%A7%8B%E5%BB%BA%E7%AB%8Bgithub-pages">&#x5F00;&#x59CB;&#x5EFA;&#x7ACB;github pages</a>
+        <ul>
+          <li><a
+              href="#%E5%BB%BA%E7%AB%8B%E5%89%8D%E7%9A%84%E5%87%86%E5%A4%87">&#x5EFA;&#x7ACB;&#x524D;&#x7684;&#x51C6;&#x5907;</a>
+          </li>
+          <li><a
+              href="#%E5%BB%BA%E7%AB%8B%E4%B8%80%E4%B8%AA%E4%BB%93%E5%BA%93repository">&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x4ED3;&#x5E93;(Repository)</a>
+          </li>
+          <li><a
+              href="#%E7%BC%96%E8%BE%91%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%A1%B5%E9%9D%A2">&#x7F16;&#x8F91;&#x7B2C;&#x4E00;&#x4E2A;&#x9875;&#x9762;</a>
+          </li>
+          <li><a
+              href="#%E5%B0%86%E9%A1%B5%E9%9D%A2%E6%8E%A8%E9%80%81%E4%B8%8A%E7%BA%BF">&#x5C06;&#x9875;&#x9762;&#x63A8;&#x9001;&#x4E0A;&#x7EBF;</a>
+          </li>
+          <li><a
+              href="#%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8A%E6%9F%A5%E7%9C%8B">&#x6D4F;&#x89C8;&#x5668;&#x4E0A;&#x67E5;&#x770B;</a>
+          </li>
+        </ul>
+      </li>
+      <li><a
+          href="#%E5%BB%BA%E7%AB%8B%E5%85%B6%E4%BB%96%E9%A1%B9%E7%9B%AE%E4%BB%93%E5%BA%93">&#x5EFA;&#x7ACB;&#x5176;&#x4ED6;&#x9879;&#x76EE;&#x4ED3;&#x5E93;</a>
+        <ul>
+          <li><a
+              href="#%E5%9C%A8%E6%9C%AC%E5%9C%B0%E6%8C%87%E5%AE%9A%E7%9B%AE%E5%BD%95clone%E9%A1%B9%E7%9B%AE">&#x5728;&#x672C;&#x5730;&#x6307;&#x5B9A;&#x76EE;&#x5F55;clone&#x9879;&#x76EE;</a>
+          </li>
+          <li><a href="#%E5%BB%BA%E7%AB%8B-gh-pages-branch">&#x5EFA;&#x7ACB; gh-pages branch</a></li>
+          <li><a
+              href="#%E5%9C%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8A%E6%9F%A5%E7%9C%8B">&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E0A;&#x67E5;&#x770B;</a>
+          </li>
+          <li><a href="#%E7%BB%93%E8%AE%BA">&#x7ED3;&#x8BBA;</a></li>
+        </ul>
+      </li>
+    </ul>
+    <hr>
+    <h2 class="mume-header" id="%E4%BB%80%E4%B9%88%E6%98%AF-github-pages">&#x4EC0;&#x4E48;&#x662F; github pages?</h2>
+
+    <p>GitHub
+      Pages&#x662F;GitHub&#x63D0;&#x4F9B;&#x7684;&#x4E00;&#x4E2A;&#x7F51;&#x9875;&#x5BC4;&#x5B58;&#x670D;&#x52A1;&#xFF0C;&#x4E8E;2008&#x5E74;&#x63A8;&#x51FA;&#x3002;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x5B58;&#x653E;&#x9759;&#x6001;&#x7F51;&#x9875;&#xFF0C;&#x5305;&#x62EC;&#x535A;&#x5BA2;&#x3001;&#x9879;&#x76EE;&#x6587;&#x6863;&#x751A;&#x81F3;&#x6574;&#x672C;&#x4E66;&#x3002;Jekyll&#x8F6F;&#x4EF6;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x5C06;&#x6587;&#x6863;&#x8F6C;&#x6362;&#x6210;&#x9759;&#x6001;&#x7F51;&#x9875;&#xFF0C;&#x8BE5;&#x8F6F;&#x4EF6;&#x63D0;&#x4F9B;&#x4E86;&#x5C06;&#x7F51;&#x9875;&#x4E0A;&#x4F20;&#x5230;GitHub
+      Pages&#x7684;&#x529F;&#x80FD;</p>
+    <p>&#x2500; &#x7EF4;&#x57FA;&#x767E;&#x79D1;</p>
+    <h2 class="mume-header" id="%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8-github-pages">
+      &#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x4F7F;&#x7528; github pages?</h2>
+
+    <p>&#x867D;&#x7136;&#x8BF4;GitHub
+      Pages&#x662F;GitHub&#x63D0;&#x4F9B;&#x7684;&#x4E00;&#x4E2A;&#x7F51;&#x9875;&#x5BC4;&#x5B58;&#x670D;&#x52A1;&#xFF0C;&#x4F46;github&#x4F7F;&#x7528;&#x4EBA;&#x6570;&#x975E;&#x5E38;&#x591A;&#xFF0C;&#x4E14;&#x4F7F;&#x7528;GitHub
+      Pages&#x7684;&#x8BDD;&#x65E0;&#x987B;&#x91CD;&#x65B0;&#x914D;&#x7F6E;&#x65B0;&#x7684;&#x57DF;&#x540D;&#xFF0C;&#x4F7F;&#x7528;&#x51E0;&#x4E2A;&#x6B65;&#x9AA4;&#x5373;&#x53EF;&#x642D;&#x5EFA;&#x597D;&#x4E00;&#x4E2A;&#x9759;&#x6001;&#x7F51;&#x7AD9;&#x3002;
+    </p>
+    <p>
+      &#x82E5;&#x53EA;&#x662F;&#x7528;&#x4E8E;&#x5206;&#x4EAB;&#x6280;&#x672F;&#x7684;&#x8BDD;&#x662F;&#x4E2A;&#x5F88;&#x597D;&#x7684;&#x5E73;&#x53F0;&#xFF0C;&#x4E14;&#x6280;&#x672F;&#x96BE;&#x5EA6;&#x4F4E;!
+    </p>
+    <p>
+      &#x4E4B;&#x540E;&#x4E5F;&#x80FD;&#x5C06;&#x4EE3;&#x7801;&#x76F4;&#x63A5;&#x653E;&#x7F6E;&#x5728;github&#x4ED3;&#x5E93;&#x4E2D;&#xFF0C;&#x4F18;&#x5316;&#x7B80;&#x5386;&#x4E0E;&#x4F5C;&#x54C1;&#x3002;
+    </p>
+    <p>
+      &#x82E5;&#x5E73;&#x65F6;&#x6709;&#x8BD5;&#x7740;&#x4E60;&#x60EF;&#x64B0;&#x5199;&#x6280;&#x672F;&#x6587;&#x7AE0;&#x7684;&#x8BDD;&#xFF0C;&#x5BF9;&#x6C9F;&#x901A;&#x4E0E;&#x4EE3;&#x7801;&#x7684;&#x7406;&#x89E3;&#x6027;&#x4E5F;&#x80FD;&#x66F4;&#x9AD8;&#x3002;
+    </p>
+    <h2 class="mume-header" id="%E5%BC%80%E5%A7%8B%E5%BB%BA%E7%AB%8Bgithub-pages">&#x5F00;&#x59CB;&#x5EFA;&#x7ACB;github
+      pages</h2>
+
+    <h4 class="mume-header" id="%E5%BB%BA%E7%AB%8B%E5%89%8D%E7%9A%84%E5%87%86%E5%A4%87">
+      &#x5EFA;&#x7ACB;&#x524D;&#x7684;&#x51C6;&#x5907;</h4>
+
+    <p>(1) &#x9700;&#x8981;&#x5148;<a href="https://github.com/">&#x5EFA;&#x7ACB;git&#x5E10;&#x53F7;</a><br>
+      (2) &#x9700;&#x8981;<a
+        href="https://git-scm.com/downloads">&#x4E0B;&#x8F7D;&#x5E76;&#x5B89;&#x88C5;</a>&#x597D;git</p>
+    <h4 class="mume-header" id="%E5%BB%BA%E7%AB%8B%E4%B8%80%E4%B8%AA%E4%BB%93%E5%BA%93repository">
+      &#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x4ED3;&#x5E93;(Repository)</h4>
+
+    <p>&#x767B;&#x5165;<a
+        href="https://github.com/">github</a>&#x540E;&#xFF0C;&#x70B9;&#x51FB;&#x53F3;&#x4E0A;&#x89D2;&#x7684;
+      &#x300C;+&#x300D; &#x5E76;&#x9009;&#x62E9; &#x300C;New repository&#x300D;</p>
+    <div class="g-img"><a href="../image/06.png" target="_blank">
+        <img src="../image/06.png">
+      </a></div>
+    <p>Repository name &#x4E2D;&#x8F93;&#x5165; &#x300C;<a
+        href="http://xn--github-ud6j708d.github.io">github&#x5E10;&#x53F7;.github.io</a>&#x300D;&#xFF0C;&#x8F93;&#x5165;&#x5B8C;&#x540E;&#x70B9;&#x51FB;&#x4E0B;&#x65B9;&#x7684;
+      &#x300C;Create resposltory&#x300D;</p>
+    <div class="g-img"><a href="../image/01.png" target="_blank">
+        <img src="../image/01.png">
+      </a></div>
+    <p>
+      &#x63A5;&#x7740;&#x5C31;&#x80FD;&#x770B;&#x89C1;&#x7684;&#x753B;&#x9762;&#xFF0C;&#x4E4B;&#x540E;&#x53EF;&#x5728;&#x300C;Your
+      profile&#x300D;&#x4E2D;&#x67E5;&#x770B;&#x521A;&#x521A;&#x5EFA;&#x7ACB;&#x7684;&#x9879;&#x76EE;&#x3002;&#x8FDB;&#x5165;&#x9879;&#x76EE;&#x540E;&#x4E0A;&#x9762;&#x6709;&#x4F60;&#x9879;&#x76EE;&#x7684;git&#x4ED3;&#x5E93;&#x94FE;&#x63A5;&#xFF0C;&#x4F60;&#x80FD;&#x591F;&#x4F9D;&#x7167;&#x4E0A;&#x9762;&#x6240;&#x6559;&#x7684;&#x6B65;&#x9AA4;&#x5728;&#x4F60;&#x7684;&#x7535;&#x8111;&#x4E0A;&#x90E8;&#x5C5E;&#x3002;&#x6216;&#x7528;&#x300C;git
+      clone
+      &#x4ED3;&#x5E93;&#x5730;&#x5740;&#x300D;&#x7684;&#x65B9;&#x5F0F;&#x8BBE;&#x5B9A;&#xFF08;&#x5728;&#x4F7F;&#x7528;git&#x4EE3;&#x7801;&#x524D;&#x4F60;&#x9996;&#x5148;&#x8981;&#x53BB;<a
+        href="https://git-scm.com/downloads">&#x4E0B;&#x8F7D;git</a>&#xFF0C;&#x624D;&#x80FD;&#x5728;&#x7535;&#x8111;&#x4E0A;&#x4F7F;&#x7528;&#xFF09;
+    </p>
+    <div class="g-img"><a href="../image/07.png" target="_blank">
+        <img src="../image/07.png">
+      </a></div>
+    <h4 class="mume-header" id="%E7%BC%96%E8%BE%91%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%A1%B5%E9%9D%A2">
+      &#x7F16;&#x8F91;&#x7B2C;&#x4E00;&#x4E2A;&#x9875;&#x9762;</h4>
+
+    <p>
+      &#x5728;&#x8BBE;&#x5B9A;&#x597D;&#x9879;&#x76EE;&#x540E;&#xFF0C;&#x8FDB;&#x5165;&#x76EE;&#x5F55;&#x4E2D;&#x3002;&#x5E76;&#x5728;&#x8BE5;&#x76EE;&#x5F55;&#x4E0B;&#x65B0;&#x589E;&#x4E00;&#x9875;&#x300C;index.html&#x300D;(&#x9875;&#x9762;&#x5185;&#x5BB9;&#x80FD;&#x81EA;&#x884C;&#x7F16;&#x8F91;)&#x3002;&#x5728;&#x63A8;&#x9001;&#x4E0A;&#x7EBF;&#x540E;&#x6253;&#x5F00;&#x94FE;&#x63A5;&#xFF0C;&#x5C31;&#x80FD;&#x76F4;&#x63A5;&#x67E5;&#x770B;&#x8BE5;&#x9875;&#x9762;&#x3002;
+    </p>
+    <p>(1)
+      &#x9879;&#x76EE;&#x4F4D;&#x7F6E;&#xFF0C;&#x4F9D;&#x636E;&#x4E2A;&#x4EBA;&#x8BBE;&#x5B9A;&#x7684;&#x9879;&#x76EE;&#x4F4D;&#x7F6E;&#x8FDB;&#x5165;(&#x4EE5;&#x4E0B;&#x8303;&#x4F8B;&#x4E3A;&#x672C;&#x9879;&#x76EE;&#x5728;&#x7535;&#x8111;&#x4E0A;&#x914D;&#x7F6E;&#x7684;&#x76EE;&#x5F55;)&#x3002;
+    </p>
+    <pre data-role="codeBlock" data-info="git" class="language-git">G:\leisure0621.github.io
+</pre>
+    <p>(2)
+      &#x6587;&#x4EF6;&#x5185;&#x5BB9;&#xFF0C;&#x53EF;&#x4EE5;&#x4F9D;&#x9700;&#x6C42;&#x81EA;&#x884C;&#x4FEE;&#x6539;&#xFF0C;&#x4E5F;&#x53EF;&#x53C2;&#x8003;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#x3002;
+    </p>
+    <pre data-role="codeBlock" data-info="html" class="language-html"><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>en<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>UTF-8<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
@@ -337,91 +969,172 @@ pre[data-line] .line-highlight[data-end]:after {
     Home Page
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
-</pre><h4 class="mume-header" id="%E5%B0%86%E9%A1%B5%E9%9D%A2%E6%8E%A8%E9%80%81%E4%B8%8A%E7%BA%BF">&#x5C06;&#x9875;&#x9762;&#x63A8;&#x9001;&#x4E0A;&#x7EBF;</h4>
+</pre>
+    <h4 class="mume-header" id="%E5%B0%86%E9%A1%B5%E9%9D%A2%E6%8E%A8%E9%80%81%E4%B8%8A%E7%BA%BF">
+      &#x5C06;&#x9875;&#x9762;&#x63A8;&#x9001;&#x4E0A;&#x7EBF;</h4>
 
-<p>&#x6DFB;&#x52A0;&#x5F85;&#x63A8;&#x9001;&#x6863;&#x6848;(add . &#x8868;&#x793A;&#x6240;&#x6709;&#x4FEE;&#x6539;&#x8FC7;&#x7684;&#x6863;&#x6848;&#x90FD;&#x8981;&#x6DFB;&#x52A0;)&#x3002;</p>
-<pre data-role="codeBlock" data-info="git" class="language-git">git add .
-</pre><div class="g-img"><a href="../image/16.png" target="_blank">
-    <img src="../image/16.png">
-</a></div>
-<br>
-<br>
-<p>&#x6DFB;&#x52A0;&#x4E8B;&#x4EF6;&#x540D;&#x79F0;&#x3002;</p>
-<pre data-role="codeBlock" data-info="git" class="language-git">git commit -m <span class="token string">&apos;my first commit&apos;</span>
-</pre><div class="g-img"><a href="../image/17.png" target="_blank">
-    <img src="../image/17.png">
-</a></div>
-<br>
-<br>
-<p>&#x63A8;&#x9001;&#x4E0A;&#x7EBF;&#x3002;</p>
-<pre data-role="codeBlock" data-info="git" class="language-git">git push
-</pre><div class="g-img"><a href="../image/18.png" target="_blank">
-    <img src="../image/18.png">
-</a></div>
-<h4 class="mume-header" id="%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8A%E6%9F%A5%E7%9C%8B">&#x6D4F;&#x89C8;&#x5668;&#x4E0A;&#x67E5;&#x770B;</h4>
+    <p>(1) &#x6DFB;&#x52A0;&#x5F85;&#x63A8;&#x9001;&#x6863;&#x6848;(add&#x540E;&#x9762;&#x52A0; .
+      &#x8868;&#x793A;&#x6240;&#x6709;&#x4FEE;&#x6539;&#x8FC7;&#x7684;&#x6863;&#x6848;&#x90FD;&#x8981;&#x6DFB;&#x52A0;)&#x3002;
+    </p>
+    <pre data-role="codeBlock" data-info="git" class="language-git">git add .
+</pre>
+    <div class="g-img">
+      <a href="../image/16.png" target="_blank">
+        <img src="../image/16.png">
+      </a>
+    </div>
+    <br>
+    <p>(2)
+      &#x6DFB;&#x52A0;&#x4E8B;&#x4EF6;&#x540D;&#x79F0;(&#x540D;&#x79F0;&#x5FC5;&#x987B;&#x586B;&#x5199;&#x7684;&#x8BA9;&#x4EBA;&#x660E;&#x767D;&#x6B64;&#x6B21;&#x66F4;&#x65B0;&#x7684;&#x539F;&#x56E0;)&#x3002;
+    </p>
+    <pre data-role="codeBlock" data-info="git" class="language-git">git commit -m <span class="token string">&apos;my first commit&apos;</span>
+</pre>
+    <div class="g-img">
+      <a href="../image/17.png" target="_blank">
+        <img src="../image/17.png">
+      </a>
+    </div>
+    <br>
+    <p>(3) &#x63A8;&#x9001;&#x4E0A;&#x7EBF;&#x3002;</p>
+    <pre data-role="codeBlock" data-info="git" class="language-git">git push
+</pre>
+    <div class="g-img">
+      <a href="../image/18.png" target="_blank">
+        <img src="../image/18.png">
+      </a>
+    </div>
+    <p>
+      &#x5982;&#x679C;&#x9700;&#x8981;&#x66F4;&#x7EC6;&#x7684;&#x7528;&#x6CD5;&#x53EF;&#x4EE5;&#x81F3;&#x7F51;&#x4E0A;&#x641C;&#x5BFB;<a
+        href="https://blog.csdn.net/qq_37577660/article/details/78565899">git
+        push</a>&#x7B49;&#x76F8;&#x5173;&#x7684;&#x5173;&#x952E;&#x5B57;&#x8FDB;&#x884C;&#x67E5;&#x627E;&#xFF0C;&#x800C;&#x5728;&#x5F53;&#x524D;&#x9879;&#x76EE;&#x4E2D;&#x63A8;&#x9001;&#x7684;&#x65B9;&#x5F0F;&#x53EA;&#x4F7F;&#x7528;git
+      push&#x7684;&#x539F;&#x56E0;&#x4E3A;&#xFF0C;&#x6B64;&#x9879;&#x76EE;&#x4EC5;&#x6709;&#x4E00;&#x4E2A;&#x7EBF;&#x4E0A;&#x5206;&#x652F;&#x3002;&#x6240;&#x4EE5;&#x53EF;&#x7528;&#x6B64;&#x65B9;&#x6CD5;&#x76F4;&#x63A5;&#x63A8;&#x9001;&#x3002;
+    </p>
+    <h4 class="mume-header" id="%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8A%E6%9F%A5%E7%9C%8B">
+      &#x6D4F;&#x89C8;&#x5668;&#x4E0A;&#x67E5;&#x770B;</h4>
 
-<p>&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x8F93;&#x5165;&#x300C;<a href="https://xn--github-ud6j708d.github.io">https://github&#x5E10;&#x53F7;.github.io</a>&#x300D;&#x5C31;&#x53EF;&#x770B;&#x89C1;&#x521A;&#x521A;&#x7F16;&#x8F91;&#x597D;&#x7684;&#x753B;&#x9762;</p>
-<div class="g-img"><a href="../image/14.png" target="_blank">
-    <img src="../image/14.png">
-</a></div>
-<p>&#x5982;&#x679C;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x9875;&#x9762;&#x90FD;&#x53EF;&#x4EE5;&#x5199;&#x5728;&#x4E00;&#x4E2A;&#x4ED3;&#x5E93;&#x5F53;&#x4E2D;&#x3002;&#x4F46;&#x5047;&#x8BBE;&#x8D8A;&#x6765;&#x8D8A;&#x591A;&#x9875;&#x9762;&#x7684;&#x8BDD;&#xFF0C;&#x5E94;&#x8BE5;&#x5C06;&#x6BCF;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;&#x9879;&#x76EE;&#x8BBE;&#x7F6E;&#x4E3A;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;repository&#xFF0C;&#x672A;&#x6765;&#x5047;&#x8BBE;&#x6709;&#x9700;&#x8981;&#x66F4;&#x6539;&#x3002;&#x6216;&#x67E5;&#x770B;commit&#x65F6;&#x4E5F;&#x4F1A;&#x66F4;&#x6E05;&#x6670;&#xFF0C;&#x4E0D;&#x5BB9;&#x6613;&#x6EB7;&#x6DC6;&#x3002;</p>
-<p>&#x5C06;&#x6BCF;&#x4E2A;&#x4E0D;&#x5173;&#x8054;&#x7684;&#x9879;&#x76EE;&#x5206;&#x5F00;&#xFF0C;&#x5E76;&#x5C06;&#x6BCF;&#x6B21;commit&#x7684;&#x6D88;&#x606F;&#x5B9A;&#x4E49;&#x7684;&#x6E05;&#x6670;&#x8BA9;&#x4EBA;&#x4E00;&#x773C;&#x53EF;&#x660E;&#x767D;&#x6B64;&#x6B21;&#x4FEE;&#x6539;&#x7684;&#x4E8B;&#x4EF6;&#x4E3B;&#x8981;&#x6709;&#x54EA;&#x4E9B;&#xFF0C;&#x4E5F;&#x662F;&#x672A;&#x6765;&#x8BE5;&#x7EC3;&#x4E60;&#x7684;&#x4E8B;&#x3002;</p>
-<h2 class="mume-header" id="%E5%BB%BA%E7%AB%8B%E5%85%B6%E4%BB%96%E9%A1%B9%E7%9B%AE%E4%BB%93%E5%BA%93">&#x5EFA;&#x7ACB;&#x5176;&#x4ED6;&#x9879;&#x76EE;&#x4ED3;&#x5E93;</h2>
+    <p>&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x8F93;&#x5165;&#x300C;<a
+        href="https://xn--github-ud6j708d.github.io">https://github&#x5E10;&#x53F7;.github.io</a>&#x300D;&#x5C31;&#x53EF;&#x770B;&#x89C1;&#x521A;&#x521A;&#x7F16;&#x8F91;&#x597D;&#x7684;&#x753B;&#x9762;
+    </p>
+    <div class="g-img">
+      <a href="../image/14.png" target="_blank">
+        <img src="../image/14.png">
+      </a>
+    </div>
+    <p>
+      &#x5982;&#x679C;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x9875;&#x9762;&#x90FD;&#x53EF;&#x4EE5;&#x5199;&#x5728;&#x4E00;&#x4E2A;&#x4ED3;&#x5E93;&#x5F53;&#x4E2D;&#x3002;&#x4F46;&#x5047;&#x8BBE;&#x8D8A;&#x6765;&#x8D8A;&#x591A;&#x9875;&#x9762;&#x7684;&#x8BDD;&#xFF0C;&#x5E94;&#x8BE5;&#x5C06;&#x6BCF;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;&#x9879;&#x76EE;&#x8BBE;&#x7F6E;&#x4E3A;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;repository&#xFF0C;&#x672A;&#x6765;&#x5047;&#x8BBE;&#x6709;&#x9700;&#x8981;&#x66F4;&#x6539;&#x3002;&#x6216;&#x67E5;&#x770B;commit&#x65F6;&#x4E5F;&#x4F1A;&#x66F4;&#x6E05;&#x6670;&#xFF0C;&#x4E0D;&#x5BB9;&#x6613;&#x6DF7;&#x6DC6;&#x3002;
+    </p>
+    <p>
+      &#x5C06;&#x6BCF;&#x4E2A;&#x4E0D;&#x5173;&#x8054;&#x7684;&#x9879;&#x76EE;&#x5206;&#x5F00;&#xFF0C;&#x5E76;&#x5C06;&#x6BCF;&#x6B21;commit&#x7684;&#x6D88;&#x606F;&#x5B9A;&#x4E49;&#x7684;&#x6E05;&#x6670;&#x8BA9;&#x4EBA;&#x4E00;&#x773C;&#x53EF;&#x660E;&#x767D;&#x6B64;&#x6B21;&#x4FEE;&#x6539;&#x7684;&#x4E8B;&#x4EF6;&#x4E3B;&#x8981;&#x6709;&#x54EA;&#x4E9B;&#xFF0C;&#x4E5F;&#x662F;&#x672A;&#x6765;&#x8BE5;&#x7EC3;&#x4E60;&#x7684;&#x4E8B;&#x3002;
+    </p>
+    <h2 class="mume-header" id="%E5%BB%BA%E7%AB%8B%E5%85%B6%E4%BB%96%E9%A1%B9%E7%9B%AE%E4%BB%93%E5%BA%93">
+      &#x5EFA;&#x7ACB;&#x5176;&#x4ED6;&#x9879;&#x76EE;&#x4ED3;&#x5E93;</h2>
 
-<p>&#x8DDF;&#x4E00;&#x822C;<a href="https://github.com/new">&#x5EFA;&#x7ACB;Repository</a>&#x7684;&#x65B9;&#x5F0F;&#x76F8;&#x540C;&#xFF0C;&#x4F46;&#x6B64;&#x65F6;&#x5DF2;&#x7ECF;<strong>&#x4E0D;&#x9700;&#x8981;</strong>&#x50CF;&#x521A;&#x5F00;&#x59CB;&#x90A3;&#x6837;&#x8F93;&#x5165;&#x300C;<a href="http://xn--github-ud6j708d.github.io">github&#x5E10;&#x53F7;.github.io</a>&#x300D;&#xFF0C;&#x800C;&#x662F;&#x76F4;&#x63A5;&#x8F93;&#x5165;&#x300C;&#x9879;&#x76EE;&#x540D;&#x79F0;&#x300D;&#x5C31;&#x80FD;&#x591F;&#x76F4;&#x63A5;&#x521B;&#x5EFA;&#x3002;</p>
-<div class="g-img"><a href="../image/10.png" target="_blank">
-    <img src="../image/10.png">
-</a></div>
-<h4 class="mume-header" id="%E5%9C%A8%E6%9C%AC%E5%9C%B0%E6%8C%87%E5%AE%9A%E7%9B%AE%E5%BD%95clone%E9%A1%B9%E7%9B%AE">&#x5728;&#x672C;&#x5730;&#x6307;&#x5B9A;&#x76EE;&#x5F55;clone&#x9879;&#x76EE;</h4>
+    <p>&#x8DDF;&#x4E00;&#x822C;<a
+        href="https://github.com/new">&#x5EFA;&#x7ACB;Repository</a>&#x7684;&#x65B9;&#x5F0F;&#x76F8;&#x540C;&#xFF0C;&#x4F46;&#x6B64;&#x65F6;&#x5DF2;&#x7ECF;<strong>&#x4E0D;&#x9700;&#x8981;</strong>&#x50CF;&#x521A;&#x5F00;&#x59CB;&#x90A3;&#x6837;&#x8F93;&#x5165;&#x300C;<a
+        href="http://xn--github-ud6j708d.github.io">github&#x5E10;&#x53F7;.github.io</a>&#x300D;&#xFF0C;&#x800C;&#x662F;&#x76F4;&#x63A5;&#x8F93;&#x5165;&#x300C;&#x9879;&#x76EE;&#x540D;&#x79F0;&#x300D;&#x5C31;&#x80FD;&#x591F;&#x76F4;&#x63A5;&#x521B;&#x5EFA;&#x3002;
+    </p>
+    <div class="g-img">
+      <a href="../image/10.png" target="_blank">
+        <img src="../image/10.png">
+      </a>
+    </div>
+    <h4 class="mume-header" id="%E5%9C%A8%E6%9C%AC%E5%9C%B0%E6%8C%87%E5%AE%9A%E7%9B%AE%E5%BD%95clone%E9%A1%B9%E7%9B%AE">
+      &#x5728;&#x672C;&#x5730;&#x6307;&#x5B9A;&#x76EE;&#x5F55;clone&#x9879;&#x76EE;</h4>
 
-<pre data-role="codeBlock" data-info="git" class="language-git">git clone &#x4ED3;&#x5E93;&#x94FE;&#x63A5;
-</pre><div class="g-img"><a href="../image/19.png" target="_blank">
-    <img src="../image/19.png">
-</a></div>
-<h4 class="mume-header" id="%E5%BB%BA%E7%AB%8B-gh-pages-branch">&#x5EFA;&#x7ACB; gh-pages branch</h4>
+    <pre data-role="codeBlock" data-info="git" class="language-git">git clone &#x4ED3;&#x5E93;&#x94FE;&#x63A5;
+</pre>
+    <div class="g-img">
+      <a href="../image/19.png" target="_blank">
+        <img src="../image/19.png">
+      </a>
+    </div>
+    <p>
+      &#x5EFA;&#x7ACB;&#x597D;&#x540E;&#xFF0C;&#x82E5;&#x4E5F;&#x5728;&#x6B64;&#x9879;&#x76EE;&#x4E2D;&#x6DFB;&#x52A0;&#x5B8C;&#x9700;&#x4E0A;&#x7EBF;&#x7684;&#x8D44;&#x6599;&#xFF0C;&#x5219;<strong>&#x8BB0;&#x5F97;push&#x4E0A;&#x7EBF;</strong>&#xFF0C;&#x90FD;&#x505A;&#x597D;&#x540E;&#x5219;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#x540E;&#x7EED;&#x8BF4;&#x660E;&#x7684;gh-pages
+      branch&#x6307;&#x4EE4;&#x3002;</p>
+    <h4 class="mume-header" id="%E5%BB%BA%E7%AB%8B-gh-pages-branch">&#x5EFA;&#x7ACB; gh-pages branch</h4>
 
-<p>gh-pages branch &#x4E3B;&#x8981;&#x662F;&#x4E3A;&#x4E86;&#x4E0A;&#x9762;&#x6240;&#x8BF4;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x300C;&#x5C06;&#x4E0D;&#x5173;&#x8FDE;&#x7684;&#x9879;&#x76EE;&#x62C6;&#x5206;&#x300D;&#x4EE5;&#x8BA9;&#x6BCF;&#x4E2A;&#x4E13;&#x6848;&#x7684;&#x5B9A;&#x4E49;&#x66F4;&#x6E05;&#x6670;&#x660E;&#x786E;&#x3002;</p>
-<br>
-<p>&#x5EFA;&#x7ACB;&#x5E76;&#x8FDB;&#x5165;gh-pages&#x5206;&#x652F;&#x3002;</p>
-<pre data-role="codeBlock" data-info="git" class="language-git">git checkout -b gh-pages
-</pre><div class="g-img"><a href="../image/15.png" target="_blank">
-    <img src="../image/15.png">
-</a></div>
-<br>
-<br>
-<p>&#x5C06;&#x5206;&#x652F;&#x63A8;&#x9001;&#x4E0A;&#x7EBF;&#x3002;</p>
-<pre data-role="codeBlock" data-info="git" class="language-git">git push --set-upstream origin gh-pages
-</pre><div class="g-img"><a href="../image/11.png" target="_blank">
-    <img src="../image/11.png">
-</a></div>
-<br>
-<br>
-<p>&#x5C06;&#x65B0;commit&#x63A8;&#x9001;&#x4E0A;&#x7EBF;&#x3002;</p>
-<pre data-role="codeBlock" data-info="git" class="language-git">git push
-</pre><div class="g-img"><a href="../image/18.png" target="_blank">
-    <img src="../image/18.png">
-</a></div>
-<h4 class="mume-header" id="%E5%9C%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8A%E6%9F%A5%E7%9C%8B">&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E0A;&#x67E5;&#x770B;</h4>
+    <p>gh-pages branch
+      &#x4E3B;&#x8981;&#x662F;&#x4E3A;&#x4E86;&#x4E0A;&#x9762;&#x6240;&#x8BF4;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x300C;&#x5C06;&#x4E0D;&#x5173;&#x8FDE;&#x7684;&#x9879;&#x76EE;&#x62C6;&#x5206;&#x300D;&#x4EE5;&#x8BA9;&#x6BCF;&#x4E2A;&#x4E13;&#x6848;&#x7684;&#x5B9A;&#x4E49;&#x66F4;&#x6E05;&#x6670;&#x660E;&#x786E;&#xFF0C;&#x8BE6;&#x7EC6;&#x4F9D;&#x7167;&#x4E0B;&#x65B9;&#x4E09;&#x6B65;&#x9AA4;&#x6267;&#x884C;&#x3002;
+    </p>
+    <p>(1) &#x5EFA;&#x7ACB;&#x5E76;&#x8FDB;&#x5165;gh-pages&#x5206;&#x652F;&#x3002;</p>
+    <pre data-role="codeBlock" data-info="git" class="language-git">git checkout -b gh-pages
+</pre>
+    <div class="g-img">
+      <a href="../image/15.png" target="_blank">
+        <img src="../image/15.png">
+      </a>
+    </div>
+    <br>
+    <p>(2) &#x5C06;&#x5206;&#x652F;&#x63A8;&#x9001;&#x4E0A;&#x7EBF;&#x3002;</p>
+    <pre data-role="codeBlock" data-info="git" class="language-git">git push --set-upstream origin gh-pages
+</pre>
+    <div class="g-img">
+      <a href="../image/11.png" target="_blank">
+        <img src="../image/11.png">
+      </a>
+    </div>
+    <br>
+    <p>(3) &#x5C06;&#x65B0;commit&#x63A8;&#x9001;&#x4E0A;&#x7EBF;&#x3002;</p>
+    <pre data-role="codeBlock" data-info="git" class="language-git">git push
+</pre>
+    <div class="g-img">
+      <a href="../image/18.png" target="_blank">
+        <img src="../image/18.png">
+      </a>
+    </div>
+    <h4 class="mume-header" id="%E5%9C%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8A%E6%9F%A5%E7%9C%8B">
+      &#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E0A;&#x67E5;&#x770B;</h4>
 
-<p>&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E0A;&#x6253;&#x5F00; <a href="https://xn--github-ud6j708d.github.io/%E9%A1%B9%E7%9B%AE%E8%B5%84%E6%96%99%E5%A4%B9/">https://github&#x5E10;&#x53F7;.github.io/&#x9879;&#x76EE;&#x8D44;&#x6599;&#x5939;/</a> &#x3002;</p>
-<div class="g-img"><a href="../image/20.png" target="_blank">
-    <img src="../image/20.png">
-</a></div>
-<h4 class="mume-header" id="%E7%BB%93%E8%AE%BA">&#x7ED3;&#x8BBA;</h4>
+    <p>&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E0A;&#x6253;&#x5F00; <a
+        href="https://xn--github-ud6j708d.github.io/%E9%A1%B9%E7%9B%AE%E8%B5%84%E6%96%99%E5%A4%B9/">https://github&#x5E10;&#x53F7;.github.io/&#x9879;&#x76EE;&#x8D44;&#x6599;&#x5939;/</a>
+      &#x3002;</p>
+    <div class="g-img">
+      <a href="../image/20.png" target="_blank">
+        <img src="../image/20.png">
+      </a>
+    </div>
+    <h4 class="mume-header" id="%E7%BB%93%E8%AE%BA">&#x7ED3;&#x8BBA;</h4>
 
-<p>&#x5728;gh-pages&#x4E2D;&#x5982;&#x679C;&#x5DF2;&#x7ECF;&#x6709;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x9879;&#x76EE;A&#x3001;&#x5728;&#x4E3B;&#x9875;&#x4E2D;&#x4E5F;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x9879;&#x76EE;A&#x7684;&#x8D44;&#x6599;&#x5939;&#x7684;&#x8BDD;&#xFF0C;&#x4F1A;&#x4EE5;gh-pages&#x7684;&#x9879;&#x76EE;A&#x4E3A;&#x4E3B;&#x3002;</p>
-<p>&#x8FD9;&#x65F6;&#x5C31;&#x80FD;&#x505A;&#x5230;&#x8D44;&#x6599;&#x62C6;&#x5206;&#x7684;&#x4F5C;&#x7528;&#xFF0C;&#x81EA;&#x7136;&#x7684;&#x4EE5;&#x540E;&#x4E5F;&#x4E0D;&#x9700;&#x8981;&#x5728;&#x4E3B;&#x9875;&#x7684;&#x9879;&#x76EE;&#x4E2D;&#x653E;&#x591A;&#x9980;&#x7684;&#x9879;&#x76EE;&#x6587;&#x4EF6;&#x8FDB;&#x53BB;&#x4E86;&#x3002;</p>
+    <p>
+      &#x5728;gh-pages&#x4E2D;&#x5982;&#x679C;&#x5DF2;&#x7ECF;&#x6709;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x9879;&#x76EE;A&#x3001;&#x5728;&#x4E3B;&#x9875;&#x4E2D;&#x4E5F;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x9879;&#x76EE;A&#x7684;&#x8D44;&#x6599;&#x5939;&#x7684;&#x8BDD;&#xFF0C;&#x4F1A;&#x4EE5;gh-pages&#x7684;&#x9879;&#x76EE;A&#x4E3A;&#x4E3B;&#x3002;
+    </p>
+    <p>
+      &#x8FD9;&#x65F6;&#x5C31;&#x80FD;&#x505A;&#x5230;&#x8D44;&#x6599;&#x62C6;&#x5206;&#x7684;&#x4F5C;&#x7528;&#xFF0C;&#x81EA;&#x7136;&#x7684;&#x4EE5;&#x540E;&#x4E5F;&#x4E0D;&#x9700;&#x8981;&#x5728;&#x4E3B;&#x9875;&#x7684;&#x9879;&#x76EE;&#x4E2D;&#x653E;&#x591A;&#x9980;&#x7684;&#x9879;&#x76EE;&#x6587;&#x4EF6;&#x8FDB;&#x53BB;&#x4E86;&#x3002;
+    </p>
+    <style>
+      .g-hr {
+        border-bottom: 1px dashed rgba(0, 150, 136, 1);
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        height: auto;
+        background-color: transparent;
+      }
 
-      </div>
-      
-      
-    
-    
-    
-    
-    
-    
-    
-    
-  
-    </body></html>
+      html body {
+        font-family: 'Microsoft YaHei', "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif !important;
+      }
+
+      .g-img {
+        text-align: center;
+      }
+
+      .g-img img {
+        border: 1px solid #d6d6d6;
+        border-radius: 8px;
+      }
+    </style>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

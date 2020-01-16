@@ -4,13 +4,13 @@
 
 ---
 
-## 什麽是 github pages?
+## 什么是 github pages?
 
 GitHub Pages是GitHub提供的一个网页寄存服务，于2008年推出。可以用于存放静态网页，包括博客、项目文档甚至整本书。Jekyll软件可以用于将文档转换成静态网页，该软件提供了将网页上传到GitHub Pages的功能
 
 ─ 维基百科
 
-## 为什麽要使用 github pages?
+## 为什么要使用 github pages?
 
 虽然说GitHub Pages是GitHub提供的一个网页寄存服务，但github使用人数非常多，且使用GitHub Pages的话无须重新配置新的域名，使用几个步骤即可搭建好一个静态网站。
 
@@ -24,8 +24,8 @@ GitHub Pages是GitHub提供的一个网页寄存服务，于2008年推出。可�
 
 #### 建立前的准备
 
-1. 需要先[建立git帐号](https://github.com/)
-2. 需要[下载并安装](https://git-scm.com/downloads)好git
+(1) 需要先[建立git帐号](https://github.com/)
+(2) 需要[下载并安装](https://git-scm.com/downloads)好git
 
 #### 建立一个仓库(Repository)
 
@@ -51,15 +51,13 @@ Repository name 中输入 「github帐号.github.io」，输入完后点击下�
 
 在设定好项目后，进入目录中。并在该目录下新增一页「index.html」(页面内容能自行编辑)。在推送上线后打开链接，就能直接查看该页面。
 
-<br>
-
-项目位置，依据个人设定的项目位置进入。
+(1) 项目位置，依据个人设定的项目位置进入(以下范例为本项目在电脑上配置的目录)。
 
 ```git
 G:\leisure0621.github.io
 ```
 
-文件内容，可以依需求自行修改。
+(2) 文件内容，可以依需求自行修改，也可参考以下代码。
 
 ```html
 <!DOCTYPE html>
@@ -78,49 +76,57 @@ G:\leisure0621.github.io
 
 #### 将页面推送上线
 
-添加待推送档案(add . 表示所有修改过的档案都要添加)。
+(1) 添加待推送档案(add后面加 . 表示所有修改过的档案都要添加)。
 
 ```git
 git add .
 ```
 
-<div class="g-img"><a href="../image/16.png" target="_blank">
-    <img src="../image/16.png" />
-</a></div>
-<br>
+<div class="g-img">
+    <a href="../image/16.png" target="_blank">
+        <img src="../image/16.png" />
+    </a>
+</div>
 <br>
 
-添加事件名称。
+(2) 添加事件名称(名称必须填写的让人明白此次更新的原因)。
 
 ```git
 git commit -m 'my first commit'
 ```
 
-<div class="g-img"><a href="../image/17.png" target="_blank">
-    <img src="../image/17.png" />
-</a></div>
-<br>
+<div class="g-img">
+    <a href="../image/17.png" target="_blank">
+        <img src="../image/17.png" />
+    </a>
+</div>
 <br>
 
-推送上线。
+(3) 推送上线。
 
 ```git
 git push
 ```
 
-<div class="g-img"><a href="../image/18.png" target="_blank">
-    <img src="../image/18.png" />
-</a></div>
+<div class="g-img">
+    <a href="../image/18.png" target="_blank">
+        <img src="../image/18.png" />
+    </a>
+</div>
+
+如果需要更细的用法可以至网上搜寻[git push](https://blog.csdn.net/qq_37577660/article/details/78565899)等相关的关键字进行查找，而在当前项目中推送的方式只使用git push的原因为，此项目仅有一个线上分支。所以可用此方法直接推送。
 
 #### 浏览器上查看
 
 在浏览器中输入「https://github帐号.github.io」就可看见刚刚编辑好的画面
 
-<div class="g-img"><a href="../image/14.png" target="_blank">
-    <img src="../image/14.png" />
-</a></div>
+<div class="g-img">
+    <a href="../image/14.png" target="_blank">
+        <img src="../image/14.png" />
+    </a>
+</div>
 
-如果只有一个项目的时候，所有的页面都可以写在一个仓库当中。但假设越来越多页面的话，应该将每个独立的项目设置为一个独立的repository，未来假设有需要更改。或查看commit时也会更清晰，不容易溷淆。
+如果只有一个项目的时候，所有的页面都可以写在一个仓库当中。但假设越来越多页面的话，应该将每个独立的项目设置为一个独立的repository，未来假设有需要更改。或查看commit时也会更清晰，不容易混淆。
 
 将每个不关联的项目分开，并将每次commit的消息定义的清晰让人一眼可明白此次修改的事件主要有哪些，也是未来该练习的事。
 
@@ -129,9 +135,11 @@ git push
 
 跟一般[建立Repository](https://github.com/new)的方式相同，但此时已经**不需要**像刚开始那样输入「github帐号.github.io」，而是直接输入「项目名称」就能够直接创建。
 
-<div class="g-img"><a href="../image/10.png" target="_blank">
-    <img src="../image/10.png" />
-</a></div>
+<div class="g-img">
+    <a href="../image/10.png" target="_blank">
+        <img src="../image/10.png" />
+    </a>
+</div>
 
 #### 在本地指定目录clone项目
 
@@ -140,57 +148,65 @@ git push
 git clone 仓库链接
 ```
 
-<div class="g-img"><a href="../image/19.png" target="_blank">
-    <img src="../image/19.png" />
-</a></div>
+<div class="g-img">
+    <a href="../image/19.png" target="_blank">
+        <img src="../image/19.png" />
+    </a>
+</div>
+
+建立好后，若也在此项目中添加完需上线的资料，则**记得push上线**，都做好后则继续执行后续说明的gh-pages branch指令。
 
 #### 建立 gh-pages branch
 
-gh-pages branch 主要是为了上面所说的事情，「将不关连的项目拆分」以让每个专案的定义更清晰明确。
+gh-pages branch 主要是为了上面所说的事情，「将不关连的项目拆分」以让每个专案的定义更清晰明确，详细依照下方三步骤执行。
 
-<br>
-
-建立并进入gh-pages分支。
+(1) 建立并进入gh-pages分支。
 
 ```git
 git checkout -b gh-pages
 ```
 
-<div class="g-img"><a href="../image/15.png" target="_blank">
-    <img src="../image/15.png" />
-</a></div>
-<br>
+<div class="g-img">
+    <a href="../image/15.png" target="_blank">
+        <img src="../image/15.png" />
+    </a>
+</div>
 <br>
 
-将分支推送上线。
+(2) 将分支推送上线。
 
 ```git
 git push --set-upstream origin gh-pages
 ```
 
-<div class="g-img"><a href="../image/11.png" target="_blank">
-    <img src="../image/11.png" />
-</a></div>
-<br>
+<div class="g-img">
+    <a href="../image/11.png" target="_blank">
+        <img src="../image/11.png" />
+    </a>
+</div>
 <br>
 
-将新commit推送上线。
+(3) 将新commit推送上线。
 
 ```git
 git push
 ```
 
-<div class="g-img"><a href="../image/18.png" target="_blank">
-    <img src="../image/18.png" />
-</a></div>
+<div class="g-img">
+    <a href="../image/18.png" target="_blank">
+        <img src="../image/18.png" />
+    </a>
+</div>
 
 #### 在浏览器上查看
 
 在浏览器上打开 https://github帐号.github.io/项目资料夹/ 。
 
-<div class="g-img"><a href="../image/20.png" target="_blank">
-    <img src="../image/20.png" />
-</a></div>
+<div class="g-img">
+    <a href="../image/20.png" target="_blank">
+        <img src="../image/20.png" />
+    </a>
+</div>
 
 #### 结论
 
