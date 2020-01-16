@@ -31,21 +31,21 @@ GitHub Pages是GitHub提供的一个网页寄存服务，于2008年推出。可�
 
 登入[github](https://github.com/)后，点击右上角的 「+」 并选择 「New repository」
 
-<a href="./image/06.png" target="_blank">
+<div class="g-img"><a href="./image/06.png" target="_blank">
     <img src="./image/06.png" />
-</a>
+</a></div>
 
 Repository name 中输入 「github帐号.github.io」，输入完后点击下方的 「Create resposltory」
 
-<a href="./image/01.png" target="_blank">
+<div class="g-img"><a href="./image/01.png" target="_blank">
     <img src="./image/01.png" />
-</a>
+</a></div>
 
 接着就能看见的画面，之后可在「Your profile」中查看刚刚建立的项目。进入项目后上面有你项目的git仓库链接，你能够依照上面所教的步骤在你的电脑上部属。或用「git clone 仓库地址」的方式设定（在使用git代码前你首先要去[下载git](https://git-scm.com/downloads)，才能在电脑上使用）
 
-<a href="./image/07.png" target="_blank">
+<div class="g-img"><a href="./image/07.png" target="_blank">
     <img src="./image/07.png" />
-</a>
+</a></div>
 
 #### 编辑第一个页面
 
@@ -84,9 +84,9 @@ G:\leisure0621.github.io
 git add .
 ```
 
-<a href="./image/16.png" target="_blank">
+<div class="g-img"><a href="./image/16.png" target="_blank">
     <img src="./image/16.png" />
-</a>
+</a></div>
 <br>
 <br>
 
@@ -96,9 +96,9 @@ git add .
 git commit -m 'my first commit'
 ```
 
-<a href="./image/17.png" target="_blank">
+<div class="g-img"><a href="./image/17.png" target="_blank">
     <img src="./image/17.png" />
-</a>
+</a></div>
 <br>
 <br>
 
@@ -108,17 +108,17 @@ git commit -m 'my first commit'
 git push
 ```
 
-<a href="./image/18.png" target="_blank">
+<div class="g-img"><a href="./image/18.png" target="_blank">
     <img src="./image/18.png" />
-</a>
+</a></div>
 
 #### 浏览器上查看
 
 在浏览器中输入「https://github帐号.github.io」就可看见刚刚编辑好的画面
 
-<a href="./image/14.png" target="_blank">
+<div class="g-img"><a href="./image/14.png" target="_blank">
     <img src="./image/14.png" />
-</a>
+</a></div>
 
 如果只有一个项目的时候，所有的页面都可以写在一个仓库当中。但假设越来越多页面的话，应该将每个独立的项目设置为一个独立的repository，未来假设有需要更改。或查看commit时也会更清晰，不容易溷淆。
 
@@ -129,9 +129,9 @@ git push
 
 跟一般[建立Repository](https://github.com/new)的方式相同，但此时已经**不需要**像刚开始那样输入「github帐号.github.io」，而是直接输入「项目名称」就能够直接创建。
 
-<a href="./image/10.png" target="_blank">
+<div class="g-img"><a href="./image/10.png" target="_blank">
     <img src="./image/10.png" />
-</a>
+</a></div>
 
 #### 在本地指定目录clone项目
 
@@ -140,9 +140,9 @@ git push
 git clone 仓库链接
 ```
 
-<a href="./image/19.png" target="_blank">
+<div class="g-img"><a href="./image/19.png" target="_blank">
     <img src="./image/19.png" />
-</a>
+</a></div>
 
 #### 建立 gh-pages branch
 
@@ -156,9 +156,9 @@ gh-pages branch 主要是为了上面所说的事情，「将不关连的项目�
 git checkout -b gh-pages
 ```
 
-<a href="./image/15.png" target="_blank">
+<div class="g-img"><a href="./image/15.png" target="_blank">
     <img src="./image/15.png" />
-</a>
+</a></div>
 <br>
 <br>
 
@@ -168,9 +168,9 @@ git checkout -b gh-pages
 git push --set-upstream origin gh-pages
 ```
 
-<a href="./image/11.png" target="_blank">
+<div class="g-img"><a href="./image/11.png" target="_blank">
     <img src="./image/11.png" />
-</a>
+</a></div>
 <br>
 <br>
 
@@ -180,17 +180,17 @@ git push --set-upstream origin gh-pages
 git push
 ```
 
-<a href="./image/18.png" target="_blank">
+<div class="g-img"><a href="./image/18.png" target="_blank">
     <img src="./image/18.png" />
-</a>
+</a></div>
 
 #### 在浏览器上查看
 
 在浏览器上打开 https://github帐号.github.io/项目资料夹/ 。
 
-<a href="./image/20.png" target="_blank">
+<div class="g-img"><a href="./image/20.png" target="_blank">
     <img src="./image/20.png" />
-</a>
+</a></div>
 
 #### 结论
 
