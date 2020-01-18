@@ -30,7 +30,7 @@ GitHub Pages 是 GitHub 提供的一个网页寄存服务，于 2008 年推出�
 
 #### 建立一个仓库(Repository)
 
-登入[github](https://github.com/)后，点击右上角的 「+」 并选择 「New repository」
+登录[github](https://github.com/)后，点击右上角的 「+」 并选择 「New repository」
 
 <div class="g-img">
     <a href="../image/06.png" target="_blank">
@@ -46,7 +46,7 @@ Repository name 中输入 「githubAccount.github.io」，输入完后点击下�
     </a>
 </div>
 
-接着就能看见的画面，之后可在「Your profile」中查看刚刚建立的项目。进入项目后上面有你项目的 git 仓库链接，你能够依照上面所教的步骤在你的电脑上部属。或用「git clone 仓库地址」的方式设定（在使用 git 代码前你首先要去[下载 git](https://git-scm.com/downloads)，才能在电脑上使用）
+接着就能看见的画面，之后可在「Your profile」中查看刚刚建立的项目。进入项目后上面有你项目的 git 仓库链接，你能够依照上面所教的步骤在你的电脑上部属。或用「git clone 仓库地址」的方式设置（在使用 git 代码前你首先要去[下载 git](https://git-scm.com/downloads)，才能在电脑上使用）
 
 <div class="g-img">
     <a href="../image/07.png" target="_blank">
@@ -56,9 +56,9 @@ Repository name 中输入 「githubAccount.github.io」，输入完后点击下�
 
 #### 编辑第一个页面
 
-在设定好项目后，进入目录中。并在该目录下新增一页「index.html」(页面内容能自行编辑)。在推送上线后打开链接，就能直接查看该页面。
+在设置好项目后，进入目录中。并在该目录下新增一页「index.html」(页面内容能自行编辑)。在推送上线后打开链接，就能直接查看该页面。
 
-1. 项目位置，依据个人设定的项目位置进入(以下范例为本项目在电脑上配置的目录)。
+1. 项目位置，依据个人设置的项目位置进入(以下范例为本项目在电脑上配置的目录)。
 
 ```git
 G:\leisure0621.github.io
@@ -163,7 +163,7 @@ git clone 仓库链接
 
 #### 建立 gh-pages branch
 
-gh-pages branch 主要是为了上面所说的事情，「将不关连的项目拆分」以让每个专案的定义更清晰明确，详细依照下方三步骤执行。
+gh-pages branch 主要是为了上面所说的事情，「将不关连的项目拆分」以让每个工程的定义更清晰明确，详细依照下方三步骤执行。
 
 1. 建立并进入 gh-pages 分支。
 
@@ -205,7 +205,7 @@ git push
 
 #### 在浏览器上查看
  
-此時項目目錄為此:
+此时项目目录为此:
 
 ```
 .
@@ -217,7 +217,7 @@ git push
 \---image
 ```
 
-在浏览器上打开 https://githubAccount.github.io/projectFolder/ (依據項目目錄，此時需打開的projectFolder應是github-pages，且顯示的內容為index.html中的資料)。
+在浏览器上打开 https://githubAccount.github.io/projectFolder/ (依据项目目录，此时需打开的projectFolder应是github-pages，且显示的内容为index.html中的资料)。
 
 <div class="g-img">
     <a href="../image/20.png" target="_blank">
