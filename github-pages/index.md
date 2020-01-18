@@ -38,7 +38,7 @@ GitHub Pages 是 GitHub 提供的一个网页寄存服务，于 2008 年推出�
     </a>
 </div>
 
-Repository name 中输入 「github 帐号.github.io」，输入完后点击下方的 「Create resposltory」
+Repository name 中输入 「githubAccount.github.io」，输入完后点击下方的 「Create resposltory」
 
 <div class="g-img">
     <a href="../image/01.png" target="_blank">
@@ -125,7 +125,7 @@ git push
 
 #### 浏览器上查看
 
-在浏览器中输入「https://github帐号.github.io」就可看见刚刚编辑好的画面
+在浏览器中输入「https://githubAccount.github.io」就可看见刚刚编辑好的画面
 
 <div class="g-img">
     <a href="../image/14.png" target="_blank">
@@ -139,7 +139,7 @@ git push
 
 ## 建立其他项目仓库
 
-跟一般[建立 Repository](https://github.com/new)的方式相同，但此时已经**不需要**像刚开始那样输入「github 帐号.github.io」，而是直接输入「项目名称」就能够直接创建。
+跟一般[建立 Repository](https://github.com/new)的方式相同，但此时已经**不需要**像刚开始那样输入「githubAccount.github.io」，而是直接输入「项目名称」就能够直接创建。
 
 <div class="g-img">
     <a href="../image/10.png" target="_blank">
@@ -204,8 +204,20 @@ git push
 </div>
 
 #### 在浏览器上查看
+ 
+此時項目目錄為此:
 
-在浏览器上打开 https://github帐号.github.io/项目资料夹/ 。
+```
+.
+|   
++---github-pages
+|       index.html
+|       index.md
+|       
+\---image
+```
+
+在浏览器上打开 https://githubAccount.github.io/projectFolder/ (依據項目目錄，此時需打開的projectFolder應是github-pages，且顯示的內容為index.html中的資料)。
 
 <div class="g-img">
     <a href="../image/20.png" target="_blank">
@@ -216,7 +228,7 @@ git push
 #### 延伸问题
 
 ```js
-「gh-pages」 跟「github帐号.github.io」站互相会有什么影响？
+「gh-pages」 跟「githubAccount.github.io」站互相会有什么影响？
 ```
 
 在 gh-pages 中如果已经有建立一个项目 A、在主页中也建立一个项目 A 的资料夹的话，会以 gh-pages 的项目 A 为主。即只会显示 gh-pages 的项目资料。
