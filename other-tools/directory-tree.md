@@ -7,16 +7,16 @@
 1. 开启cmd介面，若有使用vscode则也可以直接在终端使用
 
 <div class="g-img">
-    <a href="../image/21.png" target="_blank">
-        <img src="../image/21.png" />
+    <a href="../image/directory-tree/21.png" target="_blank">
+        <img src="../image/directory-tree/21.png" />
     </a>
 </div>
 
 2. 进入指定目录
 
 <div class="g-img">
-    <a href="../image/22.png" target="_blank">
-        <img src="../image/22.png" />
+    <a href="../image/directory-tree/22.png" target="_blank">
+        <img src="../image/directory-tree/22.png" />
     </a>
 </div>
 
@@ -29,8 +29,8 @@ tree /a /f > output.text
 4. 导出结果
 
 <div class="g-img">
-    <a href="../image/23.png" target="_blank">
-        <img src="../image/23.png" />
+    <a href="../image/directory-tree/23.png" target="_blank">
+        <img src="../image/directory-tree/23.png" />
     </a>
 </div>
 
