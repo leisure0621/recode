@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>directory-tree</title>
+  <title>css-naming-specification</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -856,44 +856,229 @@
 
 <body for="html-export">
   <div class="mume markdown-preview  ">
-    <h1>&#x5982;&#x4F55;&#x5BFC;&#x51FA;&#x76EE;&#x5F55;&#x6811;</h1>
+    <h1>CSS &#x547D;&#x540D;&#x89C4;&#x8303;</h1>
+    <ul>
+      <li><a
+          href="#%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83%E7%9A%84%E6%84%8F%E4%B9%89">&#x547D;&#x540D;&#x89C4;&#x8303;&#x7684;&#x610F;&#x4E49;</a>
+      </li>
+      <li><a href="#%E5%91%BD%E5%90%8D%E6%96%B9%E6%B3%95">&#x547D;&#x540D;&#x65B9;&#x6CD5;</a>
+        <ul>
+          <li><a href="#%E5%8D%95%E5%AD%97%E5%91%BD%E5%90%8D">&#x5355;&#x5B57;&#x547D;&#x540D;</a></li>
+          <li><a href="#%E8%BF%9E%E5%AD%97%E7%AC%A6%E5%91%BD%E5%90%8D">&#x8FDE;&#x5B57;&#x7B26;&#x547D;&#x540D;</a></li>
+          <li><a href="#%E4%B8%8B%E6%BB%91%E7%BA%BF%E5%91%BD%E5%90%8D">&#x4E0B;&#x6ED1;&#x7EBF;&#x547D;&#x540D;</a></li>
+          <li><a href="#%E9%A9%BC%E5%B3%B0%E5%91%BD%E5%90%8D">&#x9A7C;&#x5CF0;&#x547D;&#x540D;</a></li>
+          <li><a href="#bem%E5%91%BD%E5%90%8D">BEM&#x547D;&#x540D;</a></li>
+          <li><a href="#%E6%80%BB%E7%BB%93">&#x603B;&#x7ED3;</a></li>
+        </ul>
+      </li>
+      <li><a
+          href="#%E5%B8%B8%E7%94%A8%E7%9A%84%E5%91%BD%E5%90%8D%E6%96%B9%E5%BC%8F">&#x5E38;&#x7528;&#x7684;&#x547D;&#x540D;&#x65B9;&#x5F0F;</a>
+      </li>
+      <li><a href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE">&#x53C2;&#x8003;&#x6587;&#x732E;</a></li>
+    </ul>
     <hr>
+    <h2 class="mume-header" id="%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83%E7%9A%84%E6%84%8F%E4%B9%89">
+      &#x547D;&#x540D;&#x89C4;&#x8303;&#x7684;&#x610F;&#x4E49;</h2>
+
     <ol>
       <li>
-        &#x5F00;&#x542F;cmd&#x4ECB;&#x9762;&#xFF0C;&#x82E5;&#x6709;&#x4F7F;&#x7528;vscode&#x5219;&#x4E5F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;&#x7EC8;&#x7AEF;&#x4F7F;&#x7528;
+        &#x53EF;&#x4EE5;&#x518D;&#x770B;&#x89C1;CSS&#x5C31;&#x77E5;&#x9053;&#x5177;&#x4F53;&#x8FD9;&#x4E2A;&#x9009;&#x62E9;&#x5668;&#x662F;&#x505A;&#x4EC0;&#x4E48;
       </li>
-    </ol>
-    <div class="g-img">
-      <a href="../image/directory-tree/21.png" target="_blank">
-        <img src="../image/directory-tree/21.png">
-      </a>
-    </div>
-    <ol start="2">
-      <li>&#x8FDB;&#x5165;&#x6307;&#x5B9A;&#x76EE;&#x5F55;</li>
-    </ol>
-    <div class="g-img">
-      <a href="../image/directory-tree/22.png" target="_blank">
-        <img src="../image/directory-tree/22.png">
-      </a>
-    </div>
-    <ol start="3">
       <li>
-        &#x5728;&#x4ECB;&#x9762;&#x4E0A;&#x53F3;&#x952E;&#x5E76;&#x5C06;&#x4EE5;&#x4E0B;&#x6307;&#x4EE4;&#x8D34;&#x4E0A;&#xFF0C;&#x8F93;&#x5165;&#x6307;&#x4EE4;&#x540E;&#x5373;&#x5BFC;&#x51FA;(&#x5BFC;&#x51FA;&#x65F6;&#x53EF;&#x6307;&#x5B9A;&#x5BFC;&#x51FA;&#x7684;&#x6587;&#x4EF6;&#x540D;&#x79F0;&#x4E0E;&#x526F;&#x6863;&#x540D;)&#x5728;&#x8BE5;&#x76EE;&#x5F55;&#x4E2D;&#x3002;
+        &#x4ECE;&#x540D;&#x5B50;&#x5C31;&#x80FD;&#x77E5;&#x9053;&#x9009;&#x62E9;&#x5668;&#x5728;&#x54EA;&#x8FB9;&#x4F7F;&#x7528;
+      </li>
+      <li>
+        &#x4ECE;&#x540D;&#x79F0;&#x5C31;&#x53EF;&#x77E5;&#x9053;&#x9009;&#x62E9;&#x5668;&#x95F4;&#x7684;&#x8054;&#x7CFB;
       </li>
     </ol>
-    <pre data-role="codeBlock" data-info="git" class="language-git">tree /a /f &gt; output.text
+    <p>
+      &#x4E14;css&#x53EF;&#x4EE5;&#x518D;&#x591A;&#x4E2A;&#x9875;&#x9762;&#x5F53;&#x4E2D;&#x4F7F;&#x7528;&#xFF0C;&#x66F4;&#x597D;&#x7684;&#x5B9A;&#x4E49;css&#x7684;&#x89C4;&#x8303;&#x80FD;&#x8BA9;&#x4E00;&#x4E2A;&#x56E2;&#x961F;&#x66F4;&#x597D;&#x7684;&#x53BB;&#x5408;&#x4F5C;&#x5E76;&#x63D0;&#x9AD8;&#x6211;&#x4EEC;&#x7684;&#x5DE5;&#x4F5C;&#x6548;&#x7387;!
+    </p>
+    <h2 class="mume-header" id="%E5%91%BD%E5%90%8D%E6%96%B9%E6%B3%95">&#x547D;&#x540D;&#x65B9;&#x6CD5;</h2>
+
+    <h4 class="mume-header" id="%E5%8D%95%E5%AD%97%E5%91%BD%E5%90%8D">&#x5355;&#x5B57;&#x547D;&#x540D;</h4>
+
+    <pre data-role="codeBlock" data-info="css" class="language-css"><span class="token selector"><span class="token class">.special</span></span><span class="token punctuation">{</span><span class="token number">...</span><span class="token punctuation">}</span>
 </pre>
-    <ol start="4">
-      <li>&#x5BFC;&#x51FA;&#x7ED3;&#x679C;</li>
+    <h4 class="mume-header" id="%E8%BF%9E%E5%AD%97%E7%AC%A6%E5%91%BD%E5%90%8D">&#x8FDE;&#x5B57;&#x7B26;&#x547D;&#x540D;
+    </h4>
+
+    <pre data-role="codeBlock" data-info="css" class="language-css"><span class="token selector"><span class="token class">.main-title</span></span><span class="token punctuation">{</span><span class="token number">...</span><span class="token punctuation">}</span>
+</pre>
+    <h4 class="mume-header" id="%E4%B8%8B%E6%BB%91%E7%BA%BF%E5%91%BD%E5%90%8D">&#x4E0B;&#x6ED1;&#x7EBF;&#x547D;&#x540D;
+    </h4>
+
+    <pre data-role="codeBlock" data-info="css" class="language-css"><span class="token selector"><span class="token class">.main_title</span></span><span class="token punctuation">{</span><span class="token number">...</span><span class="token punctuation">}</span>
+</pre>
+    <h4 class="mume-header" id="%E9%A9%BC%E5%B3%B0%E5%91%BD%E5%90%8D">&#x9A7C;&#x5CF0;&#x547D;&#x540D;</h4>
+
+    <pre data-role="codeBlock" data-info="css" class="language-css"><span class="token selector"><span class="token class">.mainTitle</span></span><span class="token punctuation">{</span><span class="token number">...</span><span class="token punctuation">}</span>
+</pre>
+    <h4 class="mume-header" id="bem%E5%91%BD%E5%90%8D">BEM&#x547D;&#x540D;</h4>
+
+    <pre data-role="codeBlock" data-info="scss" class="language-scss"><span class="token comment">// &#x5BB6;&#x732B;__&#x82B1;&#x8272;--&#x864E;&#x6591;/&#x9ED1;&#x767D;&#x6591;&#x70B9;</span>
+<span class="token selector">.domestic-cat</span><span class="token punctuation">{</span>
+    &amp;__flower-color--leopard<span class="token punctuation">{</span><span class="token number">...</span><span class="token punctuation">}</span>
+    &amp;__flower-color--black-and-white-spot<span class="token punctuation">{</span><span class="token number">...</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</pre>
+    <table>
+      <thead>
+        <tr>
+          <th style="text-align:left">&#x5B9A;&#x4E49;</th>
+          <th style="text-align:left">&#x8BF4;&#x660E;</th>
+          <th style="text-align:left">&#x8FDE;&#x63A5;&#x65B9;&#x5F0F;</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align:left">block</td>
+          <td style="text-align:left">&#x6A21;&#x5757;</td>
+          <td style="text-align:left"><code>-</code></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">element</td>
+          <td style="text-align:left">&#x5143;&#x7D20;</td>
+          <td style="text-align:left"><code>__</code></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">modifier</td>
+          <td style="text-align:left">&#x4FEE;&#x9970;</td>
+          <td style="text-align:left"><code>--</code></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      &#x5373;<code>.domestic-cat</code>&#x8868;&#x793A;&#x6A21;&#x5757;&#xFF0C;<code>__flower-color</code>&#x8868;&#x793A;&#x5143;&#x7D20;&#xFF0C;<code>--leopard</code>&#x8868;&#x793A;&#x4FEE;&#x9970;&#x7B26;
+    </p>
+    <h4 class="mume-header" id="%E6%80%BB%E7%BB%93">&#x603B;&#x7ED3;</h4>
+
+    <p>
+      &#x4EE5;css&#x6765;&#x8BF4;&#x591A;&#x4F7F;&#x7528;&#x8FDE;&#x5B57;&#x7B26;&#x547D;&#x540D;&#x65B9;&#x5F0F;&#xFF0C;js&#x6216;&#x5176;&#x4ED6;&#x7684;&#x624D;&#x4F7F;&#x7528;&#x9A7C;&#x5CF0;&#x547D;&#x540D;&#x6CD5;&#x3002;id&#x4E0D;&#x8981;&#x6EE5;&#x7528;&#xFF0C;&#x4E14;id&#x7ECF;&#x5E38;&#x4F1A;&#x5728;js&#x4E0A;&#x4F7F;&#x7528;(id&#x662F;&#x552F;&#x4E00;&#x7684;&#xFF0C;&#x4E0D;&#x80FD;&#x591A;&#x6B21;&#x4F7F;&#x7528;&#x3002;&#x4E14;id&#x4F18;&#x5148;&#x7EA7;&#x9AD8;&#x4E8E;class)&#xFF0C;&#x4E3B;&#x8981;&#x901A;&#x8FC7;id&#x6765;&#x8FDB;&#x884C;&#x6587;&#x6863;&#x64CD;&#x4F5C;&#x3002;&#x800C;class&#x62E9;&#x9002;&#x5F53;&#x4F7F;&#x7528;&#x5373;&#x53EF;&#x3002;
+    </p>
+    <p>
+      &#x5047;&#x8BBE;&#x4EE5;BEM&#x7684;&#x65B9;&#x5F0F;&#x547D;&#x540D;&#x7684;&#x8BDD;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA9;&#x547D;&#x540D;&#x66F4;&#x6E05;&#x6670;&#x51C6;&#x786E;&#xFF0C;&#x867D;&#x7136;&#x957F;&#x5EA6;&#x4F1A;&#x589E;&#x52A0;&#xFF0C;&#x4F46;&#x5728;&#x51CF;&#x5C11;&#x5D4C;&#x5957;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x4E5F;&#x53EF;&#x589E;&#x52A0;&#x6E32;&#x67D3;&#x6548;&#x7387;&#x3002;
+    </p>
+    <h2 class="mume-header" id="%E5%B8%B8%E7%94%A8%E7%9A%84%E5%91%BD%E5%90%8D%E6%96%B9%E5%BC%8F">
+      &#x5E38;&#x7528;&#x7684;&#x547D;&#x540D;&#x65B9;&#x5F0F;</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th style="text-align:left" colspan="2">&#x9875;&#x9762;&#x7ED3;&#x6784;</th>
+
+          <th style="text-align:left" colspan="2">&#x5BFC;&#x822A;</th>
+
+          <th style="text-align:left" colspan="2">&#x529F;&#x80FD;</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align:left">&#x9875;&#x9996;</td>
+          <td style="text-align:left">header</td>
+          <td style="text-align:left">&#x5BFC;&#x822A;</td>
+          <td style="text-align:left">nav</td>
+          <td style="text-align:left">&#x6807;&#x5FD7;</td>
+          <td style="text-align:left">logo</td>
+        </tr>
+        <tr>
+          <td style="text-align:left">&#x9875;&#x9762;&#x4E3B;&#x4F53;</td>
+          <td style="text-align:left">main</td>
+          <td style="text-align:left">&#x4E3B;&#x5BFC;&#x822A;</td>
+          <td style="text-align:left">mainnav</td>
+          <td style="text-align:left">&#x5E7F;&#x544A;</td>
+          <td style="text-align:left">banner</td>
+        </tr>
+        <tr>
+          <td style="text-align:left">&#x9875;&#x5C3E;</td>
+          <td style="text-align:left">footer</td>
+          <td style="text-align:left">&#x5B50;&#x5BFC;&#x822A;</td>
+          <td style="text-align:left">subnav</td>
+          <td style="text-align:left">&#x767B;&#x5F55;</td>
+          <td style="text-align:left">login</td>
+        </tr>
+        <tr>
+          <td style="text-align:left">&#x5185;&#x5BB9;</td>
+          <td style="text-align:left">content/container</td>
+          <td style="text-align:left">&#x8FB9;&#x5BFC;&#x822A;</td>
+          <td style="text-align:left">sidebar</td>
+          <td style="text-align:left">&#x767B;&#x5F55;&#x6761;</td>
+          <td style="text-align:left">loginbar</td>
+        </tr>
+        <tr>
+          <td style="text-align:left">&#x5BB9;&#x5668;</td>
+          <td style="text-align:left">container</td>
+          <td style="text-align:left">&#x9876;&#x5BFC;&#x822A;</td>
+          <td style="text-align:left">topnav</td>
+          <td style="text-align:left">&#x6CE8;&#x518C;</td>
+          <td style="text-align:left">register</td>
+        </tr>
+        <tr>
+          <td style="text-align:left">&#x5BFC;&#x822A;</td>
+          <td style="text-align:left">nav</td>
+          <td style="text-align:left">&#x5DE6;&#x5BFC;&#x822A;</td>
+          <td style="text-align:left">leftdisebar</td>
+          <td style="text-align:left">&#x529F;&#x80FD;&#x533A;</td>
+          <td style="text-align:left">shop</td>
+        </tr>
+        <tr>
+          <td style="text-align:left">&#x53F3;&#x5BFC;&#x822A;</td>
+          <td style="text-align:left">rightsidebar</td>
+          <td style="text-align:left">&#x83DC;&#x5355;</td>
+          <td style="text-align:left">menu</td>
+          <td style="text-align:left">&#x6807;&#x9898;</td>
+          <td style="text-align:left">title</td>
+        </tr>
+        <tr>
+          <td style="text-align:left">&#x4FA7;&#x680F;</td>
+          <td style="text-align:left">sidebar</td>
+          <td style="text-align:left">&#x5B50;&#x83DC;&#x5355;</td>
+          <td style="text-align:left">submenu</td>
+
+
+        </tr>
+        <tr>
+          <td style="text-align:left">&#x680F;&#x76EE;</td>
+          <td style="text-align:left">column</td>
+          <td style="text-align:left">&#x641C;&#x7D22;</td>
+          <td style="text-align:left">search</td>
+
+
+        </tr>
+        <tr>
+          <td style="text-align:left">&#x9875;&#x9762;&#x5916;&#x56F4;&#x63A7;&#x5236;</td>
+          <td style="text-align:left">wrapper</td>
+          <td style="text-align:left">&#x6807;&#x9898;</td>
+          <td style="text-align:left">title</td>
+
+
+        </tr>
+        <tr>
+          <td style="text-align:left">&#x5DE6;&#x53F3;&#x4E2D;</td>
+          <td style="text-align:left">left right center</td>
+          <td style="text-align:left">&#x6458;&#x8981;</td>
+          <td style="text-align:left">summery</td>
+
+
+        </tr>
+      </tbody>
+    </table>
+    <h2 class="mume-header" id="%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE">&#x53C2;&#x8003;&#x6587;&#x732E;</h2>
+
+    <ol>
+      <li><a
+          href="https://www.itread01.com/articles/1489384810.html">&#x524D;&#x7AEF;&#x4EBA;&#x5458;&#x5FC5;&#x770B;CSS&#x547D;&#x540D;&#x89C4;&#x8303;</a>
+      </li>
+      <li><a
+          href="https://codertw.com/%E5%89%8D%E7%AB%AF%E9%96%8B%E7%99%BC/182219/">CSS&#x547D;&#x540D;&#x89C4;&#x8303;</a>
+      </li>
+      <li><a href="https://jiandanxinli.github.io/2016-08-11.html">CSS
+          &#x547D;&#x540D;&#x89C4;&#x8303;&#x603B;&#x7ED3;</a></li>
+      <li><a href="https://juejin.im/post/5a6c5881518825733201daf7">&#x8FD9;&#x4E9B; CSS
+          &#x547D;&#x540D;&#x89C4;&#x8303;&#x5C06;&#x7701;&#x4E0B;&#x4F60;&#x5927;&#x628A;&#x8C03;&#x8BD5;&#x65F6;&#x95F4;</a>
+      </li>
     </ol>
-    <div class="g-img">
-      <a href="../image/directory-tree/23.png" target="_blank">
-        <img src="../image/directory-tree/23.png">
-      </a>
-    </div>
-    <p>&#x53C2;&#x8003;&#x6587;&#x732E;:<br>
-      <a href="https://www.digitalcitizen.life/how-export-directory-tree-folder-windows">How to export the directory
-        tree of a folder in Windows</a></p>
 
   </div>
 
