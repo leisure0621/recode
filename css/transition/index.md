@@ -6,11 +6,11 @@
 
 ## transition-property
 
-#### 定义
+- 定义
 
 指定应用过渡的属性名称
 
-#### 用法
+- 用法
 
 transition-property: none | all | IDENT;
 
@@ -23,11 +23,11 @@ transition-property: font-size;
 
 ## transition-duration
 
-#### 定义
+<h4>定义</h4>
 
 动画过渡所需的时间(单位可用秒(s)或毫秒(ms))
 
-#### 用法
+<h4>用法</h4>
 
 ```css
 transition-duration: 10s, 30s, 230ms;
@@ -38,11 +38,11 @@ transition-duration: unset;
 
 ## transition-timing-function
 
-#### 定义
+<h4>定义</h4>
 
 通过transition-property定义被过渡的属性，每个timing-function建立[加速度曲线](https://www.jianshu.com/p/d999f090d333)，并在定义之后使用到每个css属性的过渡。
 
-#### 用法
+<h4>用法</h4>
 
 ```css
 transition-timing-function: ease; /* 平滑过渡，等同于贝塞尔曲线（0.25,0.1,0.25,0.1） */
@@ -62,11 +62,11 @@ transition-timing-function: inherit;
 
 ## transition-delay
 
-#### 定义
+<h4>定义</h4>
 
 延迟一段时间后才开始执行动画
 
-#### 用法
+<h4>用法</h4>
 
 ```css
 transition-delay: 10s, 30s, 230ms;
@@ -74,11 +74,11 @@ transition-delay: 10s, 30s, 230ms;
 
 ## transition
 
-#### 定义
+<h4>定义</h4>
 
 以上几种transition的缩略写法
 
-#### 用法
+<h4>用法</h4>
 
 ```css
 transition: property duration timing-function delay; /* 属性名 过渡时间 速度曲线 延迟时间*/
