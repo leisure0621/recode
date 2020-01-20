@@ -946,17 +946,20 @@
     <h2 class="mume-header" id="%E5%AE%9E%E9%99%85%E6%95%88%E6%9E%9C">&#x5B9E;&#x9645;&#x6548;&#x679C;</h2>
 
     <pre data-role="codeBlock" data-info="html" class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style language-css">
+    <span class="token selector">.translate-box</span> <span class="token punctuation">{</span>
+        <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
     <span class="token selector">.translate-box&gt;div</span> <span class="token punctuation">{</span>
-        <span class="token property">width</span><span class="token punctuation">:</span> 400px<span class="token punctuation">;</span>
-        <span class="token property">margin</span><span class="token punctuation">:</span> 50px auto<span class="token punctuation">;</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>100%/6<span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token property">background-color</span><span class="token punctuation">:</span> #63a35c<span class="token punctuation">;</span>
-        <span class="token property">transition</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+        <span class="token property">transition</span><span class="token punctuation">:</span> 1s<span class="token punctuation">;</span>
         <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
-        <span class="token property">font-size</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+        <span class="token property">font-size</span><span class="token punctuation">:</span> 14px<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 
     <span class="token selector">.rotate:hover</span> <span class="token punctuation">{</span>
-        <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>0.5deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>18deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 
     <span class="token selector">.scale:hover</span> <span class="token punctuation">{</span>
@@ -989,17 +992,20 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 </pre>
     <style>
+      .translate-box {
+        display: flex;
+      }
+
       .translate-box>div {
-        width: 400px;
-        margin: 50px auto;
+        width: calc(100%/6);
         background-color: #63a35c;
-        transition: 0.3s;
+        transition: 1s;
         text-align: center;
-        font-size: 20px;
+        font-size: 14px;
       }
 
       .rotate:hover {
-        transform: rotate(0.5deg);
+        transform: rotate(18deg);
       }
 
       .scale:hover {

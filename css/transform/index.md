@@ -32,17 +32,20 @@ transform 这个属性，可以让元素进行移动、旋转、缩放、倾斜�
 
 ```html
 <style>
+    .translate-box {
+        display: flex;
+    }
+
     .translate-box>div {
-        width: 400px;
-        margin: 50px auto;
+        width: calc(100%/6);
         background-color: #63a35c;
-        transition: 0.3s;
+        transition: 1s;
         text-align: center;
-        font-size: 20px;
+        font-size: 14px;
     }
 
     .rotate:hover {
-        transform: rotate(0.5deg);
+        transform: rotate(18deg);
     }
 
     .scale:hover {
@@ -76,17 +79,20 @@ transform 这个属性，可以让元素进行移动、旋转、缩放、倾斜�
 ```
 
 <style>
+    .translate-box {
+        display: flex;
+    }
+
     .translate-box>div {
-        width: 400px;
-        margin: 50px auto;
+        width: calc(100%/6);
         background-color: #63a35c;
-        transition: 0.3s;
+        transition: 1s;
         text-align: center;
-        font-size: 20px;
+        font-size: 14px;
     }
 
     .rotate:hover {
-        transform: rotate(0.5deg);
+        transform: rotate(18deg);
     }
 
     .scale:hover {
