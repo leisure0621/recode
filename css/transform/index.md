@@ -28,7 +28,7 @@ transform 这个属性，可以让元素进行移动、旋转、缩放、倾斜�
 | translate()         | 偏移      | transform: translate(120px, 50%);              |
 | scale() translate() | 缩放 偏移 | transform: scale(0.5) translate(-100%, -100%); |
 
-## 實際效果
+## 实际效果
 
 ```html
 <style>
@@ -128,6 +128,6 @@ scale()主要是在hover后的大小变换(图片/区块大小变化)，translat
 
 <h2>参考文献</h2>
 
-1. [CSS transform 能旋轉、傾斜、縮放變形 box](https://boohover.pixnet.net/blog/post/35341387)
+1. [CSS transform 能旋转、倾斜、缩放变形 box](https://boohover.pixnet.net/blog/post/35341387)
 1. [理解CSS3 transform中的Matrix(矩阵)](https://www.zhangxinxu.com/wordpress/2012/06/css3-transform-matrix-%E7%9F%A9%E9%98%B5/)
 2. [mdn transform](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform)
