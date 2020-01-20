@@ -22,10 +22,10 @@ transform 这个属性，可以让元素进行移动、旋转、缩放、倾斜�
 | 语法                | 说明      | 语法                                           |
 | :------------------ | :-------- | :--------------------------------------------- |
 | rotate()            | 旋转      | transform: rotate(0.5deg);                     |
-| scale()             | 缩放      | transform: scale(2, 0.5);                      |
-| skew()              | 扭曲/斜切 | transform: skew(30deg, 20deg);                 |
+| scale(x,y)          | 缩放      | transform: scale(2, 0.5);                      |
+| skew(x,y)           | 扭曲/斜切 | transform: skew(30deg, 20deg);                 |
 | matrix()            | 矩阵变换  | transform: matrix(1, 2, 3, 4, 5, 6);           |
-| translate()         | 偏移      | transform: translate(120px, 50%);              |
+| translate(x,y)      | 偏移      | transform: translate(120px, 50%);              |
 | scale() translate() | 缩放 偏移 | transform: scale(0.5) translate(-100%, -100%); |
 
 ## 实际效果
