@@ -159,5 +159,6 @@ div {
 1. line-height方法虽然好用，但仅限于一行。
 2. 如果要区块内的多行同时垂直置中则还是要使用vertical-align(要注意仅能用在**行内元素**、与**单元格**)。
 
-## 参考文献
+<h2>参考文献</h2>
+
 1. [mdn vertical-align](https://developer.mozilla.org/zh-CN/docs/Web/CSS/vertical-align)

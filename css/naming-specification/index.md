@@ -101,7 +101,7 @@
 
 但最終為了避免純使用`BEM`的話會造成汙染(BEM的重用性)，會配合`命名空間`來使用。
 
-## 参考文献
+<h2>参考文献</h2>
 
 1. [前端人员必看CSS命名规范](https://www.itread01.com/articles/1489384810.html)
 2. [CSS命名规范](https://codertw.com/%E5%89%8D%E7%AB%AF%E9%96%8B%E7%99%BC/182219/)

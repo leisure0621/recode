@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>directory-tree</title>
+  <title>index</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -856,44 +856,100 @@
 
 <body for="html-export">
   <div class="mume markdown-preview  ">
-    <h1>&#x5982;&#x4F55;&#x5BFC;&#x51FA;&#x76EE;&#x5F55;&#x6811;</h1>
+    <h1>&#x81EA;&#x5B9A;&#x4E49; font-face</h1>
+    <ul>
+      <li><a href="#%E4%BB%80%E4%B9%88%E6%98%AF-font-face">&#x4EC0;&#x4E48;&#x662F; font-face ?</a></li>
+      <li><a href="#font-face-%E9%80%9A%E7%94%A8%E6%A8%A1%E6%9D%BF">font-face &#x901A;&#x7528;&#x6A21;&#x677F;</a></li>
+      <li><a href="#font-face-%E7%94%A8%E6%B3%95%E5%AE%9E%E8%B7%B5">font-face &#x7528;&#x6CD5;&#x5B9E;&#x8DF5;</a></li>
+      <li><a
+          href="#%E5%AD%97%E4%BD%93%E7%BD%91%E7%AB%99%E6%8E%A8%E8%8D%90">&#x5B57;&#x4F53;&#x7F51;&#x7AD9;&#x63A8;&#x8350;</a>
+      </li>
+      <li><a href="#%E7%BB%93%E8%AE%BA">&#x7ED3;&#x8BBA;</a></li>
+    </ul>
     <hr>
+    <h2 class="mume-header" id="%E4%BB%80%E4%B9%88%E6%98%AF-font-face">&#x4EC0;&#x4E48;&#x662F; font-face ?</h2>
+
+    <p>
+      font-face&#x8868;&#x793A;&#x81EA;&#x5B9A;&#x4E49;&#x6587;&#x672C;&#x5B57;&#x4F53;&#xFF0C;&#x5B57;&#x4F53;&#x80FD;&#x7528;&#x8FDC;&#x7A0B;(http
+      &#x6216; https)&#x6216;&#x672C;&#x5730;&#x5B89;&#x88C5;&#x7684;&#x8FDB;&#x884C;&#x52A0;&#x8F7D;</p>
+    <h2 class="mume-header" id="font-face-%E9%80%9A%E7%94%A8%E6%A8%A1%E6%9D%BF">font-face
+      &#x901A;&#x7528;&#x6A21;&#x677F;</h2>
+
+    <p>
+      &#x4EE5;&#x540E;&#x72EC;&#x7ACB;&#x7684;&#x6587;&#x5B57;&#x8BBE;&#x7F6E;&#x53EF;&#x53C2;&#x8003;&#x901A;&#x7528;&#x6A21;&#x677F;&#x3002;
+    </p>
+    <pre data-role="codeBlock" data-info="css" class="language-css"><span class="token atrule"><span class="token rule">@font-face</span></span> <span class="token punctuation">{</span>
+    <span class="token property">font-family</span> <span class="token punctuation">:</span> &lt;customFontName&gt;<span class="token punctuation">;</span>
+    <span class="token property">src</span><span class="token punctuation">:</span> <span class="token url">url(&apos;filePath/customFontName.eot&apos;)</span><span class="token punctuation">;</span> <span class="token comment">/*IE9&#x4EE5;&#x4E0A;&#x6D4F;&#x89C8;&#x5668;*/</span>
+    <span class="token property">src</span><span class="token punctuation">:</span> <span class="token url">url(&apos;filePath/customFontName.eot?#iefix&apos; format(&apos;embedded-opentype&apos;)</span><span class="token punctuation">,</span> <span class="token comment">/*IE6-8&#xFF0C;&#x4F7F;&#x7528; embedded-opentype &#x7F16;&#x7801;&#x683C;&#x5F0F;*/</span>
+         <span class="token url">url(&apos;filePath/customFontName.ttf&apos;)</span> <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">&apos;truetype&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token comment">/* Safari,Android,IOS &#x517C;&#x5BB9;&#x624B;&#x673A;&#x7AEF;*/</span>
+         <span class="token url">url(&apos;filePath/customFontName.woff&apos;)</span> <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">&apos;woff&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token comment">/* Modern Browsers &#x517C;&#x5BB9;&#x6240;&#x6709;&#x6D4F;&#x89C8;&#x5668;*/</span>
+         <span class="token url">url(&apos;filePath/customFontName.svg#customFontName&apos;)</span> <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">&apos;svg&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token comment">/* Legacy IOS */</span>
+<span class="token punctuation">}</span>
+</pre>
+    <h2 class="mume-header" id="font-face-%E7%94%A8%E6%B3%95%E5%AE%9E%E8%B7%B5">font-face
+      &#x7528;&#x6CD5;&#x5B9E;&#x8DF5;</h2>
+
+    <p>
+      customFontName&#x9700;&#x81EA;&#x884C;&#x4E0B;&#x8F7D;&#xFF0C;&#x4E00;&#x822C;&#x4F1A;&#x653E;&#x7F6E;font&#x76EE;&#x5F55;&#x5F53;&#x4E2D;&#x3002;<br>
+      &#x5728;&#x4F7F;&#x7528;&#x65F6;&#x5EFA;&#x8BAE;<code>@font-face</code>&#x4E2D;<code>customFontName</code>&#x540D;&#x79F0;&#x4E0E;&#x5B57;&#x4F53;&#x6587;&#x4EF6;&#x540D;&#x7EDF;&#x4E00;&#xFF0C;&#x4EE5;&#x5229;&#x4E8E;&#x4F7F;&#x7528;&#x4E0E;&#x67E5;&#x627E;&#x65B9;&#x4FBF;&#x3002;
+    </p>
+    <pre data-role="codeBlock" data-info class="language-"><code>.
+|   
++---filePath
+|       customFontName.ttf
+|       
+|   index.html
+</code></pre>
+    <p>
+      &#x5728;html&#x6587;&#x4EF6;&#x5F53;&#x4E2D;&#xFF0C;&#x5C06;&#x4EE3;&#x7801;&#x76F4;&#x63A5;&#x653E;&#x7F6E;style&#x4E2D;&#x5C31;&#x80FD;&#x591F;&#x4F7F;&#x7528;&#x4E86;!&#x6700;&#x540E;&#x8BBE;&#x7F6E;&#x9700;&#x4F7F;&#x7528;&#x6B64;&#x5B57;&#x578B;&#x7684;&#x6587;&#x5B57;&#x5373;&#x53EF;&#x987A;&#x5229;&#x6539;&#x53D8;&#x5B57;&#x578B;!!&#x82E5;&#x6709;&#x9700;&#x8981;&#x7684;&#x8BDD;&#x4E5F;&#x53EF;&#x653E;&#x81F3;css&#x6587;&#x4EF6;&#x5F53;&#x4E2D;&#x3002;
+    </p>
+    <pre data-role="codeBlock" data-info="html" class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style language-css">
+    <span class="token atrule"><span class="token rule">@font-face</span></span> <span class="token punctuation">{</span>
+        <span class="token property">font-family</span> <span class="token punctuation">:</span> &lt;customFontName&gt;<span class="token punctuation">;</span>
+        <span class="token property">src</span><span class="token punctuation">:</span> <span class="token url">url(&apos;filePath/customFontName.eot&apos;)</span><span class="token punctuation">;</span> <span class="token comment">/*IE9&#x4EE5;&#x4E0A;&#x6D4F;&#x89C8;&#x5668;*/</span>
+        <span class="token property">src</span><span class="token punctuation">:</span> <span class="token url">url(&apos;filePath/customFontName.eot?#iefix&apos; format(&apos;embedded-opentype&apos;)</span><span class="token punctuation">,</span> <span class="token comment">/*IE6-8&#xFF0C;&#x4F7F;&#x7528; embedded-opentype &#x7F16;&#x7801;&#x683C;&#x5F0F;*/</span>
+             <span class="token url">url(&apos;filePath/customFontName.ttf&apos;)</span> <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">&apos;truetype&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token comment">/* Safari,Android,IOS &#x517C;&#x5BB9;&#x624B;&#x673A;&#x7AEF;*/</span>
+             <span class="token url">url(&apos;filePath/customFontName.woff&apos;)</span> <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">&apos;woff&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token comment">/* Modern Browsers &#x517C;&#x5BB9;&#x6240;&#x6709;&#x6D4F;&#x89C8;&#x5668;*/</span>
+             <span class="token url">url(&apos;filePath/customFontName.svg#customFontName&apos;)</span> <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">&apos;svg&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token comment">/* Legacy IOS */</span>
+    <span class="token punctuation">}</span>
+    <span class="token selector">*</span> <span class="token punctuation">{</span>
+        <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">&apos;customFontName&apos;</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</pre>
+    <h2 class="mume-header" id="%E5%AD%97%E4%BD%93%E7%BD%91%E7%AB%99%E6%8E%A8%E8%8D%90">
+      &#x5B57;&#x4F53;&#x7F51;&#x7AD9;&#x63A8;&#x8350;</h2>
+
+    <p>
+      &#x5047;&#x8BBE;&#x4E0B;&#x8F7D;&#x7684;&#x6587;&#x5B57;&#x53EA;&#x6709;&#x4E00;&#x79CD;&#x7248;&#x672C;&#xFF0C;&#x5219;&#x4F1A;&#x9020;&#x6210;&#x7AD9;&#x53F0;&#x4F7F;&#x7528;&#x65F6;&#x591A;&#x6D4F;&#x89C8;&#x5668;&#x4E0D;&#x517C;&#x5BB9;&#x7684;&#x60C5;&#x5F62;&#x3002;&#x82E5;&#x9700;&#x4E0B;&#x8F7D;&#x6B64;&#x5B57;&#x4F53;&#x7684;&#x591A;&#x79CD;&#x6863;&#x6848;&#x7C7B;&#x578B;&#x5219;&#x63A8;&#x8350;&#x81F3;<a
+        href="https://www.fontsquirrel.com/tools/webfont-generator">www.fontsquirrel.com</a>&#x4E2D;&#x4E0A;&#x4F20;&#x5DF2;&#x4E0B;&#x8F7D;&#x7684;&#x5B57;&#x4F53;&#xFF0C;&#x5E76;&#x9009;&#x62E9;<code>expert</code>&#x3002;
+    </p>
+    <p>
+      &#x5728;font-format&#x4E2D;&#x53EF;&#x9009;&#x62E9;&#x9700;&#x8981;&#x7684;&#x5B57;&#x4F53;&#x683C;&#x5F0F;&#xFF0C;&#x5E76;&#x9009;&#x62E9;<code>EOT Compressed</code>(&#x5B57;&#x4F53;&#x4E3A;&#x538B;&#x7F29;&#x7248;)&#xFF0C;&#x9009;&#x5B8C;&#x540E;&#x6309;<code>Donlowad</code>&#x5373;&#x53EF;&#x4E0B;&#x8F7D;&#x3002;
+    </p>
+    <h2 class="mume-header" id="%E7%BB%93%E8%AE%BA">&#x7ED3;&#x8BBA;</h2>
+
     <ol>
       <li>
-        &#x5F00;&#x542F;cmd&#x4ECB;&#x9762;&#xFF0C;&#x82E5;&#x6709;&#x4F7F;&#x7528;vscode&#x5219;&#x4E5F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;&#x7EC8;&#x7AEF;&#x4F7F;&#x7528;
+        &#x5B57;&#x4F53;&#x6587;&#x4EF6;&#x4E0E;font-family&#x81EA;&#x8BA2;&#x8BD1;&#x540D;&#x79F0;&#x9700;&#x7EDF;&#x4E00;&#xFF0C;&#x5229;&#x4E8E;&#x67E5;&#x627E;&#x4E0E;&#x4F7F;&#x7528;&#x3002;
       </li>
-    </ol>
-    <div class="g-img">
-      <a href="../image/directory-tree/21.png" target="_blank">
-        <img src="../image/directory-tree/21.png">
-      </a>
-    </div>
-    <ol start="2">
-      <li>&#x8FDB;&#x5165;&#x6307;&#x5B9A;&#x76EE;&#x5F55;</li>
-    </ol>
-    <div class="g-img">
-      <a href="../image/directory-tree/22.png" target="_blank">
-        <img src="../image/directory-tree/22.png">
-      </a>
-    </div>
-    <ol start="3">
       <li>
-        &#x5728;&#x4ECB;&#x9762;&#x4E0A;&#x53F3;&#x952E;&#x5E76;&#x5C06;&#x4EE5;&#x4E0B;&#x6307;&#x4EE4;&#x8D34;&#x4E0A;&#xFF0C;&#x8F93;&#x5165;&#x6307;&#x4EE4;&#x540E;&#x5373;&#x5BFC;&#x51FA;(&#x5BFC;&#x51FA;&#x65F6;&#x53EF;&#x6307;&#x5B9A;&#x5BFC;&#x51FA;&#x7684;&#x6587;&#x4EF6;&#x540D;&#x79F0;&#x4E0E;&#x526F;&#x6863;&#x540D;)&#x5728;&#x8BE5;&#x76EE;&#x5F55;&#x4E2D;&#x3002;
+        &#x4E3A;&#x4E86;&#x6D4F;&#x89C8;&#x5668;&#x517C;&#x5BB9;&#x6027;&#xFF0C;&#x5EFA;&#x8BAE;&#x5C06;&#x6240;&#x9700;&#x7684;&#x5B57;&#x578B;&#x6863;&#x6848;&#x4E0B;&#x8F7D;&#x5168;(*.ttf,
+        *.eot, *.woff, *.svg)</li>
+      <li>
+        &#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x5FC5;&#x987B;&#x6B63;&#x786E;&#x4E14;&#x53EF;&#x4F7F;&#x7528;&#xFF0C;&#x5426;&#x5219;&#x6613;&#x9020;&#x6210;&#x7F51;&#x9875;&#x6E32;&#x67D3;&#x963B;&#x585E;
       </li>
     </ol>
-    <pre data-role="codeBlock" data-info="git" class="language-git">tree /a /f &gt; output.text
-</pre>
-    <ol start="4">
-      <li>&#x5BFC;&#x51FA;&#x7ED3;&#x679C;</li>
+    <h2>&#x53C2;&#x8003;&#x6587;&#x732E;</h2>
+    <ol>
+      <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/@font-face">mdn font-face</a></li>
+      <li><a
+          href="https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-blocking-css?hl=zh-cn">&#x963B;&#x585E;&#x6E32;&#x67D3;&#x7684;
+          CSS</a></li>
+      <li><a href="https://juejin.im/post/59c60691518825396f4f71a1">&#x539F;&#x6765; CSS &#x4E0E; JS
+          &#x662F;&#x8FD9;&#x6837;&#x963B;&#x585E; DOM &#x89E3;&#x6790;&#x548C;&#x6E32;&#x67D3;&#x7684;</a></li>
     </ol>
-    <div class="g-img">
-      <a href="../image/directory-tree/23.png" target="_blank">
-        <img src="../image/directory-tree/23.png">
-      </a>
-    </div>
-    <p>&#x53C2;&#x8003;&#x6587;&#x732E;:<br>
-      <a href="https://www.digitalcitizen.life/how-export-directory-tree-folder-windows">How to export the directory
-        tree of a folder in Windows</a></p>
 
   </div>
 
