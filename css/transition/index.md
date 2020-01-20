@@ -4,13 +4,13 @@
 
 ---
 
-## transition-property
+## transition-property 属性
 
-- 定义
+<h4>定义</h4>
 
 指定应用过渡的属性名称
 
-- 用法
+<h4>用法</h4>
 
 transition-property: none | all | IDENT;
 
@@ -21,7 +21,7 @@ none表示没有过渡，all表示所有可被动画的属性都表现出过渡�
 transition-property: font-size;
 ```
 
-## transition-duration
+## transition-duration 动画时间
 
 <h4>定义</h4>
 
@@ -36,7 +36,7 @@ transition-duration: initial;
 transition-duration: unset;
 ```
 
-## transition-timing-function
+## transition-timing-function 速度曲线
 
 <h4>定义</h4>
 
@@ -60,7 +60,7 @@ transition-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1.0, 0.1);
 transition-timing-function: inherit;
 ```
 
-## transition-delay
+## transition-delay 延迟动画
 
 <h4>定义</h4>
 
@@ -72,7 +72,7 @@ transition-timing-function: inherit;
 transition-delay: 10s, 30s, 230ms;
 ```
 
-## transition
+## transition 动画缩写
 
 <h4>定义</h4>
 
