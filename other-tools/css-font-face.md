@@ -45,9 +45,9 @@ customFontName需自行下载，一般会放置font目录当中。
         font-family : <customFontName>;
         src: url('filePath/customFontName.eot'); /*IE9以上浏览器*/
         src: url('filePath/customFontName.eot?#iefix' format('embedded-opentype'), /*IE6-8，使用 embedded-opentype 编码格式*/
-            url('filePath/customFontName.ttf') format('truetype'), /* Safari,Android,IOS 兼容手机端*/
-            url('filePath/customFontName.woff') format('woff'), /* Modern Browsers 兼容所有浏览器*/
-            url('filePath/customFontName.svg#customFontName') format('svg'), /* Legacy IOS */
+             url('filePath/customFontName.ttf') format('truetype'), /* Safari,Android,IOS 兼容手机端*/
+             url('filePath/customFontName.woff') format('woff'), /* Modern Browsers 兼容所有浏览器*/
+             url('filePath/customFontName.svg#customFontName') format('svg'), /* Legacy IOS */
     }
     * {
         font-family: 'customFontName';
