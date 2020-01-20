@@ -901,17 +901,22 @@
 |       
 |   index.html
 </code></pre>
-    <pre data-role="codeBlock" data-info="css" class="language-css"><span class="token atrule"><span class="token rule">@font-face</span></span> <span class="token punctuation">{</span>
-    <span class="token property">font-family</span> <span class="token punctuation">:</span> &lt;customFontName&gt;<span class="token punctuation">;</span>
-    <span class="token property">src</span><span class="token punctuation">:</span> <span class="token url">url(&apos;filePath/customFontName.eot&apos;)</span><span class="token punctuation">;</span> <span class="token comment">/*IE9&#x4EE5;&#x4E0A;&#x6D4F;&#x89C8;&#x5668;*/</span>
-    <span class="token property">src</span><span class="token punctuation">:</span> <span class="token url">url(&apos;filePath/customFontName.eot?#iefix&apos; format(&apos;embedded-opentype&apos;)</span>, <span class="token comment">/*IE6-8&#xFF0C;&#x4F7F;&#x7528; embedded-opentype &#x7F16;&#x7801;&#x683C;&#x5F0F;*/</span>
-         <span class="token url">url(&apos;filePath/customFontName.ttf&apos;)</span> <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">&apos;truetype&apos;</span><span class="token punctuation">)</span>, <span class="token comment">/* Safari,Android,IOS &#x517C;&#x5BB9;&#x624B;&#x673A;&#x7AEF;*/</span>
-         <span class="token url">url(&apos;filePath/customFontName.woff&apos;)</span> <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">&apos;woff&apos;</span><span class="token punctuation">)</span>, <span class="token comment">/* Modern Browsers &#x517C;&#x5BB9;&#x6240;&#x6709;&#x6D4F;&#x89C8;&#x5668;*/</span>
-         <span class="token url">url(&apos;filePath/customFontName.svg#customFontName&apos;)</span> <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">&apos;svg&apos;</span><span class="token punctuation">)</span>, <span class="token comment">/* Legacy IOS */</span>
-<span class="token punctuation">}</span>
-<span class="token selector">*</span> <span class="token punctuation">{</span>
-    <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">&apos;customFontName&apos;</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
+    <p>
+      &#x5728;html&#x6587;&#x4EF6;&#x5F53;&#x4E2D;&#xFF0C;&#x5C06;&#x4EE3;&#x7801;&#x76F4;&#x63A5;&#x653E;&#x7F6E;style&#x4E2D;&#x5C31;&#x80FD;&#x591F;&#x4F7F;&#x7528;&#x4E86;!&#x6700;&#x540E;&#x8BBE;&#x7F6E;&#x9700;&#x4F7F;&#x7528;&#x6B64;&#x5B57;&#x578B;&#x7684;&#x6587;&#x5B57;&#x5373;&#x53EF;&#x987A;&#x5229;&#x6539;&#x53D8;&#x5B57;&#x578B;!!&#x82E5;&#x6709;&#x9700;&#x8981;&#x7684;&#x8BDD;&#x4E5F;&#x53EF;&#x653E;&#x81F3;css&#x6587;&#x4EF6;&#x5F53;&#x4E2D;&#x3002;
+    </p>
+    <pre data-role="codeBlock" data-info="html" class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style language-css">
+    <span class="token atrule"><span class="token rule">@font-face</span></span> <span class="token punctuation">{</span>
+        <span class="token property">font-family</span> <span class="token punctuation">:</span> &lt;customFontName&gt;<span class="token punctuation">;</span>
+        <span class="token property">src</span><span class="token punctuation">:</span> <span class="token url">url(&apos;filePath/customFontName.eot&apos;)</span><span class="token punctuation">;</span> <span class="token comment">/*IE9&#x4EE5;&#x4E0A;&#x6D4F;&#x89C8;&#x5668;*/</span>
+        <span class="token property">src</span><span class="token punctuation">:</span> <span class="token url">url(&apos;filePath/customFontName.eot?#iefix&apos; format(&apos;embedded-opentype&apos;)</span>, <span class="token comment">/*IE6-8&#xFF0C;&#x4F7F;&#x7528; embedded-opentype &#x7F16;&#x7801;&#x683C;&#x5F0F;*/</span>
+            <span class="token url">url(&apos;filePath/customFontName.ttf&apos;)</span> <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">&apos;truetype&apos;</span><span class="token punctuation">)</span>, <span class="token comment">/* Safari,Android,IOS &#x517C;&#x5BB9;&#x624B;&#x673A;&#x7AEF;*/</span>
+            <span class="token url">url(&apos;filePath/customFontName.woff&apos;)</span> <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">&apos;woff&apos;</span><span class="token punctuation">)</span>, <span class="token comment">/* Modern Browsers &#x517C;&#x5BB9;&#x6240;&#x6709;&#x6D4F;&#x89C8;&#x5668;*/</span>
+            <span class="token url">url(&apos;filePath/customFontName.svg#customFontName&apos;)</span> <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">&apos;svg&apos;</span><span class="token punctuation">)</span>, <span class="token comment">/* Legacy IOS */</span>
+    <span class="token punctuation">}</span>
+    <span class="token selector">*</span> <span class="token punctuation">{</span>
+        <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">&apos;customFontName&apos;</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
 </pre>
     <h2 class="mume-header" id="%E5%AD%97%E4%BD%93%E7%BD%91%E7%AB%99%E6%8E%A8%E8%8D%90">
       &#x5B57;&#x4F53;&#x7F51;&#x7AD9;&#x63A8;&#x8350;</h2>
