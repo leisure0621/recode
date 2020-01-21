@@ -76,7 +76,7 @@ transition-delay: 10s, 30s, 230ms;
 
 <h4>定义</h4>
 
-以上几种transition的缩略写法
+以上几种transition的缩略写法，可只写过渡时间(ex. `transition: 0.3s;`) 。
 
 <h4>用法</h4>
 
@@ -88,17 +88,15 @@ transition: property duration timing-function delay; /* 属性名 过渡时间 �
 
 transition在使用的时候一定要有事件(事件的点击、属标的经过等)，其中也可设置过渡时间、速度曲线、动画延迟执行。
 
-此属性广泛用在动画触发上(起码动画时间的设置须熟悉)，须熟悉使用。
+此属性广泛用在动画触发上(起码动画时间的设置须熟悉)，须熟悉(通常配合transform、animation、颜色等的过渡使用)。
 
 但在应用时有时页面动画过多会造成页面画面抖动，此时就需要配合使用[硬件加速(will-change)](https://developer.mozilla.org/zh-CN/docs/Web/CSS/will-change)，但此属性也不是万用的，仍须审慎使用(用的过多会使机器过渡消耗资源，且此功能只要使用了，就会将对应的优化存在内存当中)。
-
-
 
 <h2>参考文献</h2>
 
 1. [实用的 CSS — 贝塞尔曲线(cubic-bezier)](https://www.jianshu.com/p/d999f090d333)
 2. [MDN transition](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transition)
-
+3. [CSS3 动画 Transition, Animation, Transform 基础 [笔记]](https://adon988.logdown.com/posts/4729740-css3-animation-notes)
 
 <style>
     /* 额外调整 */
