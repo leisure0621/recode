@@ -86,6 +86,7 @@
     .background-color-transition__item-setting {
         width: 100%;
         height: 100px;
+        margin-bottom: 10px;
         background-color: rgba(0, 150, 136, 1);
         /* 要执行的动画(必须设置) */
         animation-name: gradualTransition;
@@ -128,6 +129,7 @@
     .background-color-transition__item-setting {
         width: 100%;
         height: 100px;
+        margin-bottom: 10px;
         background-color: rgba(0, 150, 136, 1);
         animation-name: gradualTransition;
         animation-duration: 3s;
