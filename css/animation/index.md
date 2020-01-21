@@ -274,7 +274,7 @@ animation: name duration timing-function delay iteration-count direction fill-mo
 2. 带图片的元素放在伪元素中
 3. 巧用 will-change
 
-#### will-change
+## will-change 硬件加速?
 
 增加页面渲染性能。
 
@@ -310,6 +310,11 @@ will-change可以用auto、scroll-position、contents等方式使用，但建议
         <img src="../../image/will-change/will-change.png" />
     </a>
 </div>
+
+## 结论
+
+1. 适当的使用will-change，不要所有属性都加
+2. 页面上不要有太多动画
 
 <h2>参考文献</h2>
 
