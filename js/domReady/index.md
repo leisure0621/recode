@@ -19,9 +19,11 @@
 5. 加载图片等外部文件
 6. 页面加载完毕
 
-## Dom Ready的实现策略
+## Dom Ready 的实现策略
 
-为了实现Dom Ready策略，则须考虑到 DOMContentLoaded 方法，但 [DOMContentLoaded](https://caniuse.com/#search=DOMContentLoaded) 又不支持 IE6-8，考虑到这一层故制定了以下的实现策略。
+在考虑到了加载步骤后，就会想 "那要如何达成在加载完后就执行对dom的操作呢?" 。
+
+这时候就有了 "Dom Ready 的实现策略" ，而为了实现 Dom Ready 则会考虑到 DOMContentLoaded 方法(需要注意的是 DOMContentLoaded 事件必须等待其所属script之前的样式(css)加载解析完成才会触发)，但 [DOMContentLoaded](https://caniuse.com/#search=DOMContentLoaded) 又不支持 IE6-8，考虑到这一层故制定了以下的实现策略。
 
 1. 支持DOMContentLoaded事件的，就使用DOMContentLoaded事件。
 2. 不支持的就用来自Diego Perini发现的着名Hack兼容。兼容原理大概就是通过IE中的document，documentElement.doScroll('left')来判断DOM树是否创建完毕。
@@ -80,19 +82,43 @@ function myReady(fn){
 ```html
 <div id="showMsg"></div>
 <script>
-var msgBox = d.getElementById("showMsg");
+var msgBox = document.getElementById('showMsg');
+var time1, time2;
 myReady(function() {
-    msgBox.innerHTML += "dom已加载！<br>";
-    msgBox.innerHTML += "时间戳：" + time1 + "<br>";
+    time1 = new Date().getTime();
+    msgBox.innerHTML += 'myReady:<br> dom已加载！<br>';
+    msgBox.innerHTML += '时间戳：' + time1 + '<br><br>';
 });
+window.onload = function() {
+    time2 = new Date().getTime();
+    msgBox.innerHTML += 'window.onload:<br> dom已加载！<br>';
+    msgBox.innerHTML += '时间戳：' + new Date().getTime() + '<br><br>';
+    msgBox.innerHTML += '时间差: ' + (time2 - time1) + '<br>';
+};
 </script>
 ```
 
+4. 执行结果
+
+```cs
+myReady:
+dom已加载！
+时间戳：1580145960633
+
+window.onload:
+dom已加载！
+时间戳：1580145960703
+
+时间差: 69
+```
+
+对比下发现DomReady比onload执行速度更快。
+
 ## 结论
 
-再对比下发现DomReady比onload快了2秒多，故在实际上使用的时候不应该常偷懒的仅使用 `window.onload` 去处理问题。
-
-而是思考在一般使用的情况下如何更加提升效率，是我们在思考中所需要提升的。
+1. Dom Ready 是一种代码执行的策略，用来让代码在 Dom 加载完成后能直接对 Dom 进行操作。
+2. window.onload、setTimeout 也是实现策略之一。
+3. 用原生js另写一个专门做 Dom Ready 的 function 去处理的方法会比 window.onload 执行效率更快。
 
 <h2>参考文献</h2>
 
