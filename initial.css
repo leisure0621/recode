@@ -32,7 +32,7 @@ html body {
     border-radius: 8px;
 }
 
-.markdown-preview ul {
+.markdown-preview h1 + ul {
     position: fixed;
     top: 20px;
     left: 0;
