@@ -32,24 +32,6 @@ html body {
     border-radius: 8px;
 }
 
-.markdown-preview h1 + ul {
-    position: fixed;
-    top: 20px;
-    left: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-right: 15px;
-    background: #fff;
-    box-shadow: 0px 0px 3px rgb(222, 222, 222);
-    border-radius: 0px 5px 5px 0px;
-    min-width: 120px;
-    z-index: 1;
-    border-color: rgba(0, 150, 136, 1);
-    border-width: 1px 5px 1px 0;
-    border-style: solid;
-    min-height: 200px;
-}
-
 html
     body[for='html-export']:not([data-presentation-mode]):not([html-show-sidebar-toc])
     .markdown-preview {
