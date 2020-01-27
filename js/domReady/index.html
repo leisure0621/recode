@@ -265,41 +265,37 @@ pre[data-line] .line-highlight[data-end]:after {
       <div class="mume markdown-preview  ">
       <h1>&#x4EC0;&#x4E48;&#x662F; domReady ?</h1>
 <ul>
-<li><a href="#domready">domReady</a></li>
+<li><a href="#dom-ready-%E7%94%A8%E6%84%8F">Dom Ready &#x7528;&#x610F;?</a></li>
 <li><a href="#dom-%E6%96%87%E6%A1%A3%E5%8A%A0%E8%BD%BD%E6%AD%A5%E9%AA%A4">Dom &#x6587;&#x6863;&#x52A0;&#x8F7D;&#x6B65;&#x9AA4;</a></li>
-<li><a href="#domready%E7%9A%84%E5%AE%9E%E7%8E%B0%E7%AD%96%E7%95%A5">domReady&#x7684;&#x5B9E;&#x73B0;&#x7B56;&#x7565;</a></li>
+<li><a href="#dom-ready%E7%9A%84%E5%AE%9E%E7%8E%B0%E7%AD%96%E7%95%A5">Dom Ready&#x7684;&#x5B9E;&#x73B0;&#x7B56;&#x7565;</a></li>
 <li><a href="#%E7%BB%93%E8%AE%BA">&#x7ED3;&#x8BBA;</a></li>
 </ul>
 <link rel="stylesheet" href="..\..\initial.css">
 <hr>
-<h2 class="mume-header" id="domready">domReady</h2>
+<h2 class="mume-header" id="dom-ready-%E7%94%A8%E6%84%8F">Dom Ready &#x7528;&#x610F;?</h2>
 
-<p>&#x6240;&#x6709;&#x7684;HTML&#x90FD;&#x8F6C;&#x6210;&#x8282;&#x70B9;&#x540E;&#xFF0C;&#x5C31;&#x53EB;&#x505A; DOM &#x6811;&#x6784;&#x5EFA;&#x5B8C;&#x6BD5;&#x4E5F;&#x5C31;&#x662F; domReady(&#x5B8C;&#x6574;&#x8BF4;&#x6CD5;&#x4E3A; DOMContentLoaded)&#x3002;</p>
-<blockquote>
-<p>&#x5373;&#x4E00;&#x4E2A;&#x88AB;&#x5C01;&#x88C5;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x4EE5;&#x5F53;&#x6D4F;&#x89C8;&#x5668;&#x751F;&#x6210;DOM&#x6811;&#x7ED3;&#x6784;&#x540E;&#x5C31;&#x5F00;&#x59CB;&#x89E3;&#x6790;&#x67D0;&#x4E9B;js&#x4EE3;&#x7801;&#x3002;</p>
-</blockquote>
+<p>&#x8BA9;&#x4EE3;&#x7801;&#x5728;Dom&#x52A0;&#x8F7D;&#x5B8C;&#x6210;&#x540E;&#x80FD;&#x76F4;&#x63A5;&#x5BF9;Dom&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x3002;</p>
 <h2 class="mume-header" id="dom-%E6%96%87%E6%A1%A3%E5%8A%A0%E8%BD%BD%E6%AD%A5%E9%AA%A4">Dom &#x6587;&#x6863;&#x52A0;&#x8F7D;&#x6B65;&#x9AA4;</h2>
 
 <ol>
 <li>&#x89E3;&#x6790;HTML</li>
 <li>&#x52A0;&#x8F7D;&#x5916;&#x90E8;&#x811A;&#x672C;(<em>.js)&#x548C;&#x6837;&#x5F0F;&#x8868;(</em>.css)&#x6587;&#x4EF6;</li>
 <li>&#x89E3;&#x6790;&#x5E76;&#x6267;&#x884C;&#x811A;&#x672C;</li>
-<li>Dom&#x6811;&#x6784;&#x5EFA;&#x5B8C;&#x6210;(DOMContentLoaded&#xFF0C;&#x7F29;&#x5199;&#x4E3A; domReady)</li>
+<li>Dom&#x6811;&#x6784;&#x5EFA;&#x5B8C;&#x6210;</li>
 <li>&#x52A0;&#x8F7D;&#x56FE;&#x7247;&#x7B49;&#x5916;&#x90E8;&#x6587;&#x4EF6;</li>
 <li>&#x9875;&#x9762;&#x52A0;&#x8F7D;&#x5B8C;&#x6BD5;</li>
 </ol>
-<h2 class="mume-header" id="domready%E7%9A%84%E5%AE%9E%E7%8E%B0%E7%AD%96%E7%95%A5">domReady&#x7684;&#x5B9E;&#x73B0;&#x7B56;&#x7565;</h2>
+<h2 class="mume-header" id="dom-ready%E7%9A%84%E5%AE%9E%E7%8E%B0%E7%AD%96%E7%95%A5">Dom Ready&#x7684;&#x5B9E;&#x73B0;&#x7B56;&#x7565;</h2>
 
-<p>&#x56E0;&#x4E3A;&#x5B9E;&#x9645;&#x5F00;&#x53D1;&#x4E2D;&#x901A;&#x5E38;&#x4F1A;&#x6709;&#x5F88;&#x591A;js&#x4EE3;&#x7801;&#xFF0C;&#x5982;&#x679C;&#x90FD;&#x4F7F;&#x7528;window.onload&#x7684;&#x8BDD;&#x52A0;&#x8F7D;&#x901F;&#x5EA6;&#x5219;&#x4F1A;&#x5F88;&#x6162;&#xFF0C;&#x6545;&#x4E3A;&#x4E86;&#x63D0;&#x5347;&#x901F;&#x5EA6;&#x4E14;&#x4E5F;&#x4E3A;&#x4E86;&#x5728;&#x6784;&#x5EFA;&#x5B8C;&#x540E;&#x89E6;&#x53D1;&#xFF0C;&#x5236;&#x5B9A;&#x4E86;&#x4EE5;&#x4E0B;&#x7B56;&#x7565;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x5B9E;&#x73B0;Dom Ready&#x7B56;&#x7565;&#xFF0C;&#x5219;&#x987B;&#x8003;&#x8651;&#x5230; DOMContentLoaded &#x65B9;&#x6CD5;&#xFF0C;&#x4F46; <a href="https://caniuse.com/#search=DOMContentLoaded">DOMContentLoaded</a> &#x53C8;&#x4E0D;&#x652F;&#x6301; IE6-8&#xFF0C;&#x8003;&#x8651;&#x5230;&#x8FD9;&#x4E00;&#x5C42;&#x6545;&#x5236;&#x5B9A;&#x4E86;&#x4EE5;&#x4E0B;&#x7684;&#x5B9E;&#x73B0;&#x7B56;&#x7565;&#x3002;</p>
 <ol>
 <li>&#x652F;&#x6301;DOMContentLoaded&#x4E8B;&#x4EF6;&#x7684;&#xFF0C;&#x5C31;&#x4F7F;&#x7528;DOMContentLoaded&#x4E8B;&#x4EF6;&#x3002;</li>
 <li>&#x4E0D;&#x652F;&#x6301;&#x7684;&#x5C31;&#x7528;&#x6765;&#x81EA;Diego Perini&#x53D1;&#x73B0;&#x7684;&#x7740;&#x540D;Hack&#x517C;&#x5BB9;&#x3002;&#x517C;&#x5BB9;&#x539F;&#x7406;&#x5927;&#x6982;&#x5C31;&#x662F;&#x901A;&#x8FC7;IE&#x4E2D;&#x7684;document&#xFF0C;documentElement.doScroll(&apos;left&apos;)&#x6765;&#x5224;&#x65AD;DOM&#x6811;&#x662F;&#x5426;&#x521B;&#x5EFA;&#x5B8C;&#x6BD5;&#x3002;</li>
 </ol>
-<p>&#x4F7F;&#x7528;javascript&#x5B9E;&#x73B0;&#x7684;&#x65B9;&#x6CD5;&#x5982;&#x4E0B;&#x3002;</p>
+<p>&#x4F7F;&#x7528;javascript&#x5B9E;&#x73B0;&#x7684;&#x65B9;&#x6CD5;&#x5982;&#x4E0B;:</p>
 <ol>
 <li>&#x521B;&#x5EFA;&#x4E00;&#x4E2A; <code>domReady.js</code></li>
 <li>&#x9875;&#x9762;&#x5F15;&#x7528; <code>domReady.js</code></li>
-<li>&#x4F7F;&#x7528; <code>myReady</code> &#x56DE;&#x8C03;&#x51FD;&#x6570;</li>
 </ol>
 <pre data-role="codeBlock" data-info="js" class="language-javascript"><span class="token keyword">function</span> <span class="token function">myReady</span><span class="token punctuation">(</span>fn<span class="token punctuation">)</span><span class="token punctuation">{</span>  
     <span class="token comment">//&#x5BF9;&#x4E8E;&#x73B0;&#x4EE3;&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x5BF9;DOMContentLoaded&#x4E8B;&#x4EF6;&#x7684;&#x5904;&#x7406;&#x91C7;&#x7528;&#x6807;&#x51C6;&#x7684;&#x4E8B;&#x4EF6;&#x7ED1;&#x5B9A;&#x65B9;&#x5F0F;  </span>
@@ -342,8 +338,8 @@ pre[data-line] .line-highlight[data-end]:after {
         <span class="token punctuation">}</span>  
     <span class="token punctuation">}</span>  
 <span class="token punctuation">}</span>
-</pre><ol start="4">
-<li>&#x5B9E;&#x9645;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;</li>
+</pre><ol start="3">
+<li>&#x4F7F;&#x7528; <code>myReady</code> &#x56DE;&#x8C03;&#x51FD;&#x6570;</li>
 </ol>
 <pre data-role="codeBlock" data-info="html" class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>showMsg<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
@@ -364,6 +360,10 @@ pre[data-line] .line-highlight[data-end]:after {
 <li><a href="https://www.jianshu.com/p/6b0a95cdbc7a">&#x7B80;&#x8FF0;domready&#x548C;onload&#x4E8B;&#x4EF6;&#x7684;&#x533A;&#x522B;</a></li>
 <li><a href="https://www.jianshu.com/p/88b9d3874749">&#x3010;js&#x3011;&#x5B9E;&#x73B0;DOMReady</a></li>
 <li><a href="https://www.geekjc.com/post/5c2b9a5e2b963e0f4f041aca">DOM&#x63A2;&#x7D22;&#x4E4B;-domReady</a></li>
+<li><a href="https://www.cnblogs.com/zhangziqiu/archive/2011/06/27/domready.html">DOM Ready &#x8BE6;&#x89E3;</a></li>
+<li><a href="https://www.cnblogs.com/rubylouvre/archive/2009/12/30/1635645.html">javascript&#x7684;domReady</a></li>
+<li><a href="http://jsorz.cn/blog/2016/12/code-patterns-of-dom-ready.html">&#x5E38;&#x7528;&#x6A21;&#x5F0F;&#x7247;&#x6BB5;&#x4E4B; domReady</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/Events/DOMContentLoaded">DOMContentLoaded</a></li>
 </ol>
 
       </div>

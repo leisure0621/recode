@@ -6,34 +6,30 @@
 
 ---
 
-## domReady
+## Dom Ready 用意?
 
-所有的HTML都转成节点后，就叫做 DOM 树构建完毕也就是 domReady(完整说法为 DOMContentLoaded)。
-
-> 即一个被封装的方法，用以当浏览器生成DOM树结构后就开始解析某些js代码。
+让代码在Dom加载完成后能直接对Dom进行操作。
 
 ## Dom 文档加载步骤
 
 1. 解析HTML
 2. 加载外部脚本(*.js)和样式表(*.css)文件
 3. 解析并执行脚本
-4. Dom树构建完成(DOMContentLoaded，缩写为 domReady)
+4. Dom树构建完成
 5. 加载图片等外部文件
 6. 页面加载完毕
 
-## domReady的实现策略
+## Dom Ready的实现策略
 
-因为实际开发中通常会有很多js代码，如果都使用window.onload的话加载速度则会很慢，故为了提升速度且也为了在构建完后触发，制定了以下策略。
-
+为了实现Dom Ready策略，则须考虑到 DOMContentLoaded 方法，但 [DOMContentLoaded](https://caniuse.com/#search=DOMContentLoaded) 又不支持 IE6-8，考虑到这一层故制定了以下的实现策略。
 
 1. 支持DOMContentLoaded事件的，就使用DOMContentLoaded事件。
 2. 不支持的就用来自Diego Perini发现的着名Hack兼容。兼容原理大概就是通过IE中的document，documentElement.doScroll('left')来判断DOM树是否创建完毕。
 
-使用javascript实现的方法如下。
+使用javascript实现的方法如下:
 
 1. 创建一个 `domReady.js`
 2. 页面引用 `domReady.js`
-3. 使用 `myReady` 回调函数
 
 ```js
 function myReady(fn){  
@@ -79,7 +75,7 @@ function myReady(fn){
 }
 ```
 
-4. 实际使用方法
+3. 使用 `myReady` 回调函数
 
 ```html
 <div id="showMsg"></div>
@@ -105,3 +101,7 @@ myReady(function() {
 3. [简述domready和onload事件的区别](https://www.jianshu.com/p/6b0a95cdbc7a)
 4. [【js】实现DOMReady](https://www.jianshu.com/p/88b9d3874749)
 5. [DOM探索之-domReady](https://www.geekjc.com/post/5c2b9a5e2b963e0f4f041aca)
+6. [DOM Ready 详解](https://www.cnblogs.com/zhangziqiu/archive/2011/06/27/domready.html)
+7. [javascript的domReady](https://www.cnblogs.com/rubylouvre/archive/2009/12/30/1635645.html)
+8. [常用模式片段之 domReady](http://jsorz.cn/blog/2016/12/code-patterns-of-dom-ready.html)
+9. [DOMContentLoaded](https://developer.mozilla.org/zh-CN/docs/Web/Events/DOMContentLoaded)
