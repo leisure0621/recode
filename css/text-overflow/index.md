@@ -2,6 +2,8 @@
 
 [toc]
 
+@import "../../initial.css"
+
 ---
 
 ## text-overflow 的作用?
@@ -144,15 +146,15 @@ Ipsum is simply dummy text ...
 其中最常用的应为ellipsis，用作文本溢出省略号。
 
 <div class="g-img">
-    <a href="../image/css-text-overflow/text-overflow.png" target="_blank">
-        <img src="../image/css-text-overflow/text-overflow.png" />
+    <a href="../../image/css-text-overflow/text-overflow.png" target="_blank">
+        <img src="../../image/css-text-overflow/text-overflow.png" />
     </a>
 </div>
 
 除了单行溢出外页面上也经常需使用到多行文本溢出，此时若看到-webkit-line-clamp的话就可知主流浏览器新版本的部分大多都支持(除了IE)，故为了兼容性也会配合:after使用。
 
 <div class="g-img">
-    <a href="../image/css-text-overflow/line-clamp.png" target="_blank">
-        <img src="../image/css-text-overflow/line-clamp.png" />
+    <a href="../../image/css-text-overflow/line-clamp.png" target="_blank">
+        <img src="../../image/css-text-overflow/line-clamp.png" />
     </a>
 </div>

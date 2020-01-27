@@ -2,6 +2,8 @@
 
 [toc]
 
+@import "../../initial.css"
+
 ---
 
 ## transform 的作用

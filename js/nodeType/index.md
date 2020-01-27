@@ -2,6 +2,8 @@
 
 [toc]
 
+@import "../../initial.css"
+
 ---
 
 ## nodeType 的作用与说明
@@ -212,42 +214,3 @@ nodeType可用来区分不同的节点类型。
 
 1. [MDN nodeType](https://developer.mozilla.org/zh-CN/docs/Web/API/Node/nodeType)
 2. [jQuery-选取器](https://kanboo.github.io/2018/05/31/jQuery-Selector/)
-
-
-
-
-
-<style>
-    /* 额外调整 */
-    pre[class*="language-"] {
-      background: rgba(0, 0, 0, 0) !important;
-      box-shadow: 0px 0px 3px rgb(222, 222, 222);
-      border-left: 3px solid rgba(0, 150, 136, 1);
-      border-radius: 0 !important;
-    }
-
-    pre[class="language-game-select"] * {
-      color: #d42b2b !important;
-    }
-
-    .g-hr {
-      border-bottom: 1px dashed rgba(0, 150, 136, 1);
-      margin-top: 5rem;
-      margin-bottom: 5rem;
-      height: auto;
-      background-color: transparent;
-    }
-
-    html body {
-      font-family: 'Microsoft YaHei', "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif !important;
-    }
-
-    .g-img {
-      text-align: center;
-    }
-
-    .g-img img {
-      border: 1px solid #d6d6d6;
-      border-radius: 8px;
-    }
-</style>

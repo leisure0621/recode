@@ -2,6 +2,8 @@
 
 [toc]
 
+@import "../../initial.css"
+
 ---
 
 ## vertical-align 用法

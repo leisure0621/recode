@@ -2,6 +2,8 @@
 
 [toc]
 
+@import "../../initial.css"
+
 ---
 
 ## transition-property 属性
@@ -97,38 +99,3 @@ transition在使用的时候一定要有事件(事件的点击、属标的经过
 1. [实用的 CSS — 贝塞尔曲线(cubic-bezier)](https://www.jianshu.com/p/d999f090d333)
 2. [MDN transition](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transition)
 3. [CSS3 动画 Transition, Animation, Transform 基础 [笔记]](https://adon988.logdown.com/posts/4729740-css3-animation-notes)
-
-<style>
-    /* 额外调整 */
-    pre[class*="language-"] {
-      background: rgba(0, 0, 0, 0) !important;
-      box-shadow: 0px 0px 3px rgb(222, 222, 222);
-      border-left: 3px solid rgba(0, 150, 136, 1);
-      border-radius: 0 !important;
-    }
-
-    pre[class="language-game-select"] * {
-      color: #d42b2b !important;
-    }
-
-    .g-hr {
-      border-bottom: 1px dashed rgba(0, 150, 136, 1);
-      margin-top: 5rem;
-      margin-bottom: 5rem;
-      height: auto;
-      background-color: transparent;
-    }
-
-    html body {
-      font-family: 'Microsoft YaHei', "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif !important;
-    }
-
-    .g-img {
-      text-align: center;
-    }
-
-    .g-img img {
-      border: 1px solid #d6d6d6;
-      border-radius: 8px;
-    }
-</style>

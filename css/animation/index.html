@@ -274,6 +274,7 @@ pre[data-line] .line-highlight[data-end]:after {
 <li><a href="#will-change-%E7%A1%AC%E4%BB%B6%E5%8A%A0%E9%80%9F">will-change &#x786C;&#x4EF6;&#x52A0;&#x901F;?</a></li>
 <li><a href="#%E7%BB%93%E8%AE%BA">&#x7ED3;&#x8BBA;</a></li>
 </ul>
+<link rel="stylesheet" href="..\..\initial.css">
 <hr>
 <h2 class="mume-header" id="animation-%E5%B1%9E%E6%80%A7">animation &#x5C5E;&#x6027;</h2>
 
@@ -283,15 +284,15 @@ pre[data-line] .line-highlight[data-end]:after {
 
 <p>&#x8FD9;&#x8FB9;&#x5148;&#x76F4;&#x63A5;&#x653E;&#x4E0A;&#x4EE3;&#x7801;!&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x82E5;&#x6267;&#x884C;&#xFF0C;&#x5219;&#x4F1A;3&#x79D2;&#x5185;&#x6267;&#x884C;&#x5B8C;&#x533A;&#x5757;&#x4ECE;&#x6DF1;&#x7EFF;&#x8272;&#x53D8;&#x6210;&#x6CA1;&#x6709;&#x989C;&#x8272;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x52A8;&#x753B;&#x7ED3;&#x675F;&#x540E;&#x8FD8;&#x539F;&#x56DE;&#x9ED8;&#x8BA4;&#x6837;&#x5F0F;(&#x5373;&#x95EA;&#x4E00;&#x4E0B;&#x56DE;&#x6DF1;&#x7EFF;)&#x3002;</p>
 <pre data-role="codeBlock" data-info="html" class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style language-css">
-    <span class="token selector"><span class="token class">.background-color-transition</span></span> <span class="token punctuation">{</span>
-        <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100</span><span class="token unit">%</span><span class="token punctuation">;</span>
-        <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100</span><span class="token unit">px</span><span class="token punctuation">;</span>
-        <span class="token property">margin-bottom</span><span class="token punctuation">:</span> <span class="token number">10</span><span class="token unit">px</span><span class="token punctuation">;</span>
-        <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">150</span><span class="token punctuation">,</span> <span class="token number">136</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token selector">.background-color-transition</span> <span class="token punctuation">{</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+        <span class="token property">margin-bottom</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+        <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0, 150, 136, 1<span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token comment">/* &#x8981;&#x6267;&#x884C;&#x7684;&#x52A8;&#x753B;(&#x5FC5;&#x987B;&#x8BBE;&#x7F6E;) */</span>
         <span class="token property">animation-name</span><span class="token punctuation">:</span> deepToShallow<span class="token punctuation">;</span>
         <span class="token comment">/* &#x52A8;&#x753B;&#x6267;&#x884C;&#x65F6;&#x95F4;(&#x5FC5;&#x987B;&#x8BBE;&#x7F6E;) */</span>
-        <span class="token property">animation-duration</span><span class="token punctuation">:</span> <span class="token number">3</span><span class="token unit">s</span><span class="token punctuation">;</span>
+        <span class="token property">animation-duration</span><span class="token punctuation">:</span> 3s<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 
     <span class="token comment">/* &#x52A8;&#x753B;&#x76D2;&#x5B50; &#x52A8;&#x753B;&#x540D;&#x79F0;*/</span>
@@ -299,12 +300,12 @@ pre[data-line] .line-highlight[data-end]:after {
 
         <span class="token comment">/* &#x5F00;&#x59CB; */</span>
         <span class="token selector">from</span> <span class="token punctuation">{</span>
-            <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">150</span><span class="token punctuation">,</span> <span class="token number">136</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0, 150, 136, 1<span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
 
         <span class="token comment">/* &#x7ED3;&#x675F; */</span>
         <span class="token selector">to</span> <span class="token punctuation">{</span>
-            <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">150</span><span class="token punctuation">,</span> <span class="token number">136</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0, 150, 136, 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
     <span class="token punctuation">}</span>
 </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
@@ -343,19 +344,19 @@ pre[data-line] .line-highlight[data-end]:after {
 <h2 class="mume-header" id="%E9%80%9F%E5%BA%A6%E6%9B%B2%E7%BA%BF-%E5%BB%B6%E8%BF%9F%E8%AE%BE%E7%BD%AE-%E5%BE%AA%E7%8E%AF%E6%92%AD%E6%94%BE-%E5%BE%AA%E7%8E%AF%E6%96%B9%E5%90%91">&#x901F;&#x5EA6;&#x66F2;&#x7EBF;&#x3001;&#x5EF6;&#x8FDF;&#x8BBE;&#x7F6E;&#x3001;&#x5FAA;&#x73AF;&#x64AD;&#x653E;&#x3001;&#x5FAA;&#x73AF;&#x65B9;&#x5411;</h2>
 
 <pre data-role="codeBlock" data-info="html" class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style language-css">
-    <span class="token selector"><span class="token class">.background-color-transition__item-setting</span></span> <span class="token punctuation">{</span>
-        <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100</span><span class="token unit">%</span><span class="token punctuation">;</span>
-        <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100</span><span class="token unit">px</span><span class="token punctuation">;</span>
-        <span class="token property">margin-bottom</span><span class="token punctuation">:</span> <span class="token number">10</span><span class="token unit">px</span><span class="token punctuation">;</span>
-        <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">150</span><span class="token punctuation">,</span> <span class="token number">136</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token selector">.background-color-transition__item-setting</span> <span class="token punctuation">{</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+        <span class="token property">margin-bottom</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+        <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0, 150, 136, 1<span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token comment">/* &#x8981;&#x6267;&#x884C;&#x7684;&#x52A8;&#x753B;(&#x5FC5;&#x987B;&#x8BBE;&#x7F6E;) */</span>
         <span class="token property">animation-name</span><span class="token punctuation">:</span> gradualTransition<span class="token punctuation">;</span>
         <span class="token comment">/* &#x52A8;&#x753B;&#x6267;&#x884C;&#x65F6;&#x95F4;(&#x5FC5;&#x987B;&#x8BBE;&#x7F6E;) */</span>
-        <span class="token property">animation-duration</span><span class="token punctuation">:</span> <span class="token number">3</span><span class="token unit">s</span><span class="token punctuation">;</span>
+        <span class="token property">animation-duration</span><span class="token punctuation">:</span> 3s<span class="token punctuation">;</span>
         <span class="token comment">/* &#x52A8;&#x753B;&#x7684;&#x901F;&#x5EA6;&#x66F2;&#x7EBF;&#x8BBE;&#x7F6E;(&#x4E0D;&#x4E00;&#x5B9A;&#x8981;&#x8BBE;&#x7F6E;) &#x5E73;&#x6ED1;&#x8FC7;&#x6E21;*/</span>
         <span class="token property">animation-timing-function</span><span class="token punctuation">:</span> ease<span class="token punctuation">;</span>
         <span class="token comment">/* &#x52A8;&#x753B;&#x5F00;&#x59CB;&#x4E4B;&#x524D;&#x7684;&#x7B49;&#x5F85;&#x65F6;&#x95F4;(&#x4E0D;&#x4E00;&#x5B9A;&#x8981;&#x8BBE;&#x7F6E;) (&#x65F6;&#x95F4;&#x82E5;&#x4E3A;0.5s&#x4F7F;&#x7528;&#x4E60;&#x60EF;&#x4E0A;&#x5219;&#x5E94;&#x8BBE;&#x7F6E;&#x4E3A;.5s) */</span>
-        <span class="token property">animation-delay</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token unit">s</span><span class="token punctuation">;</span>
+        <span class="token property">animation-delay</span><span class="token punctuation">:</span> 1s<span class="token punctuation">;</span>
         <span class="token comment">/* &#x52A8;&#x753B;&#x5FAA;&#x73AF;&#x6B21;&#x6570;(&#x4E0D;&#x4E00;&#x5B9A;&#x8981;&#x8BBE;&#x7F6E;) &#x65E0;&#x9650;(&#x8BBE;&#x7F6E;&#x4E3A;&#x6570;&#x5B57;&#x5219;&#x4E3A;&#x6267;&#x884C;&#x6B21;&#x6570;)*/</span>
         <span class="token property">animation-iteration-count</span><span class="token punctuation">:</span> infinite<span class="token punctuation">;</span>
         <span class="token comment">/* &#x52A8;&#x753B;&#x5FAA;&#x73AF;&#x65B9;&#x5411;(&#x4E0D;&#x4E00;&#x5B9A;&#x8981;&#x8BBE;&#x7F6E;) &#x5148;&#x6B63;&#x5411;&#x5728;&#x53CD;&#x5411;&#x4EA4;&#x66FF;&#x8FD0;&#x884C;*/</span>
@@ -366,19 +367,19 @@ pre[data-line] .line-highlight[data-end]:after {
     <span class="token atrule"><span class="token rule">@keyframes</span> gradualTransition</span> <span class="token punctuation">{</span>
 
         <span class="token selector">0%</span> <span class="token punctuation">{</span>
-            <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">150</span><span class="token punctuation">,</span> <span class="token number">136</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0, 150, 136, 1<span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
 
         <span class="token selector">25%</span> <span class="token punctuation">{</span>
-            <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">150</span><span class="token punctuation">,</span> <span class="token number">136</span><span class="token punctuation">,</span> <span class="token number">0.5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0, 150, 136, 0.5<span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
 
         <span class="token selector">75%</span> <span class="token punctuation">{</span>
-            <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">150</span><span class="token punctuation">,</span> <span class="token number">136</span><span class="token punctuation">,</span> <span class="token number">0.25</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0, 150, 136, 0.25<span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
 
         <span class="token selector">100%</span> <span class="token punctuation">{</span>
-            <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">150</span><span class="token punctuation">,</span> <span class="token number">136</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0, 150, 136, 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
     <span class="token punctuation">}</span>
 </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
@@ -425,21 +426,21 @@ pre[data-line] .line-highlight[data-end]:after {
 <h2 class="mume-header" id="%E5%8A%A8%E7%94%BB%E7%BB%93%E6%9D%9F%E5%90%8E%E7%9A%84%E7%8A%B6%E6%80%81-%E4%B8%AD%E9%80%94%E8%BF%90%E8%A1%8C%E6%88%96%E6%9A%82%E5%81%9C%E5%8A%A8%E7%94%BB">&#x52A8;&#x753B;&#x7ED3;&#x675F;&#x540E;&#x7684;&#x72B6;&#x6001;&#x3001;&#x4E2D;&#x9014;&#x8FD0;&#x884C;&#x6216;&#x6682;&#x505C;&#x52A8;&#x753B;</h2>
 
 <pre data-role="codeBlock" data-info="html" class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style language-css">
-    <span class="token selector"><span class="token class">.background-color-transition__item-forwards</span></span> <span class="token punctuation">{</span>
-        <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100</span><span class="token unit">%</span><span class="token punctuation">;</span>
-        <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100</span><span class="token unit">px</span><span class="token punctuation">;</span>
-        <span class="token property">margin-bottom</span><span class="token punctuation">:</span> <span class="token number">10</span><span class="token unit">px</span><span class="token punctuation">;</span>
-        <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">150</span><span class="token punctuation">,</span> <span class="token number">136</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token selector">.background-color-transition__item-forwards</span> <span class="token punctuation">{</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+        <span class="token property">margin-bottom</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+        <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0, 150, 136, 1<span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token comment">/* &#x8981;&#x6267;&#x884C;&#x7684;&#x52A8;&#x753B;(&#x5FC5;&#x987B;&#x8BBE;&#x7F6E;) */</span>
         <span class="token property">animation-name</span><span class="token punctuation">:</span> run-forwards<span class="token punctuation">;</span>
         <span class="token comment">/* &#x52A8;&#x753B;&#x6267;&#x884C;&#x65F6;&#x95F4;(&#x5FC5;&#x987B;&#x8BBE;&#x7F6E;) */</span>
-        <span class="token property">animation-duration</span><span class="token punctuation">:</span> <span class="token number">3</span><span class="token unit">s</span><span class="token punctuation">;</span>
+        <span class="token property">animation-duration</span><span class="token punctuation">:</span> 3s<span class="token punctuation">;</span>
         <span class="token comment">/* &#x52A8;&#x753B;&#x7ED3;&#x675F;&#x540E;&#x7684;&#x72B6;&#x6001; &#x8BBE;&#x7F6E;&#x4E3A;&#x52A8;&#x753B;&#x7ED3;&#x675F;&#x65F6;&#x7684;&#x72B6;&#x6001;*/</span>
         <span class="token property">animation-fill-mode</span><span class="token punctuation">:</span> forwards<span class="token punctuation">;</span>        
         <span class="token comment">/* &#x52A8;&#x753B;&#x5FAA;&#x73AF;&#x6B21;&#x6570;(&#x4E0D;&#x4E00;&#x5B9A;&#x8981;&#x8BBE;&#x7F6E;) &#x65E0;&#x9650;(&#x8BBE;&#x7F6E;&#x4E3A;&#x6570;&#x5B57;&#x5219;&#x4E3A;&#x6267;&#x884C;&#x6B21;&#x6570;)*/</span>
         <span class="token property">animation-iteration-count</span><span class="token punctuation">:</span> infinite<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
-    <span class="token selector"><span class="token class">.background-color-transition__item-forwards</span><span class="token pseudo-class">:hover</span></span> <span class="token punctuation">{</span>
+    <span class="token selector">.background-color-transition__item-forwards:hover</span> <span class="token punctuation">{</span>
         <span class="token comment">/* &#x4E2D;&#x9014;&#x8FD0;&#x884C;&#x6216;&#x6682;&#x505C;&#x52A8;&#x753B; &#x6682;&#x505C;*/</span>
         <span class="token property">animation-play-state</span><span class="token punctuation">:</span> paused<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
@@ -449,19 +450,19 @@ pre[data-line] .line-highlight[data-end]:after {
     <span class="token atrule"><span class="token rule">@keyframes</span> run-forwards</span> <span class="token punctuation">{</span>
 
         <span class="token selector">0%</span> <span class="token punctuation">{</span>
-            <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">150</span><span class="token punctuation">,</span> <span class="token number">136</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0, 150, 136, 1<span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
 
         <span class="token selector">25%</span> <span class="token punctuation">{</span>
-            <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">150</span><span class="token punctuation">,</span> <span class="token number">136</span><span class="token punctuation">,</span> <span class="token number">0.5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0, 150, 136, 0.5<span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
 
         <span class="token selector">75%</span> <span class="token punctuation">{</span>
-            <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">150</span><span class="token punctuation">,</span> <span class="token number">136</span><span class="token punctuation">,</span> <span class="token number">0.25</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0, 150, 136, 0.25<span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
 
         <span class="token selector">100%</span> <span class="token punctuation">{</span>
-            <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">150</span><span class="token punctuation">,</span> <span class="token number">136</span><span class="token punctuation">,</span> <span class="token number">0.1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0, 150, 136, 0.1<span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
     <span class="token punctuation">}</span>
 </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
@@ -565,40 +566,7 @@ GPU &#x5373;&#x56FE;&#x5F62;&#x5904;&#x7406;&#x5668;&#xFF0C;&#x4E13;&#x95E8;&#x5
 <ol>
 <li><a href="https://adon988.logdown.com/posts/4729740-css3-animation-notes">CSS3 &#x52A8;&#x753B; Transition, Animation, Transform &#x57FA;&#x7840; [&#x7B14;&#x8BB0;]</a></li>
 </ol>
-<style>
-    /* 额外调整 */
-    pre[class*="language-"] {
-      background: rgba(0, 0, 0, 0) !important;
-      box-shadow: 0px 0px 3px rgb(222, 222, 222);
-      border-left: 3px solid rgba(0, 150, 136, 1);
-      border-radius: 0 !important;
-    }
 
-    pre[class="language-game-select"] * {
-      color: #d42b2b !important;
-    }
-
-    .g-hr {
-      border-bottom: 1px dashed rgba(0, 150, 136, 1);
-      margin-top: 5rem;
-      margin-bottom: 5rem;
-      height: auto;
-      background-color: transparent;
-    }
-
-    html body {
-      font-family: 'Microsoft YaHei', "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif !important;
-    }
-
-    .g-img {
-      text-align: center;
-    }
-
-    .g-img img {
-      border: 1px solid #d6d6d6;
-      border-radius: 8px;
-    }
-</style>
       </div>
       
       
