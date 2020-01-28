@@ -1,71 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Document</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>判断是否为XML by 司徒正美</title>
+    </head>
+    <body>
+        <div id="father">
+            <div id="child">子节点内容</div>
+        </div>
         <script>
-            function myReady(fn) {
-                //对于现代浏览器，对DOMContentLoaded事件的处理采用标准的事件绑定方式
-                if (document.addEventListener) {
-                    document.addEventListener('DOMContentLoaded', fn, false);
-                } else {
-                    IEContentLoaded(fn);
-                }
-                //IE模拟DOMContentLoaded
-                function IEContentLoaded(fn) {
-                    var d = window.document;
-                    var done = false;
-
-                    //只执行一次用户的回调函数init()
-                    var init = function() {
-                        if (!done) {
-                            done = true;
-                            fn();
+            function compatibleContains(a, b) {
+                try {
+                    while ((b = b.parentNode)) {
+                        if (b === a) {
+                            return true;
                         }
-                    };
-                    (function() {
-                        try {
-                            // DOM树未创建完之前调用doScroll会抛出错误
-                            d.documentElement.doScroll('left');
-                        } catch (e) {
-                            //延迟再试一次~
-                            setTimeout(arguments.callee, 50);
-                            return;
-                        }
-                        // 没有错误就表示DOM树创建完毕，然后立马执行用户回调
-                        init();
-                    })();
-                    //监听document的加载状态
-                    d.onreadystatechange = function() {
-                        // 如果用户是在domReady之后绑定的函数，就立马执行
-                        if (d.readyState == 'complete') {
-                            d.onreadystatechange = null;
-                            init();
-                        }
-                    };
+                    }
+                    return false;
+                } catch (e) {
+                    return false;
                 }
             }
-        </script>
-    </head>
-
-    <body>
-        <div id="showMsg"></div>
-        <script>
-            var msgBox = document.getElementById('showMsg');
-            var time1, time2;
-            myReady(function() {
-                time1 = new Date().getTime();
-                msgBox.innerHTML += 'myReady:<br> dom已加载！<br>';
-                msgBox.innerHTML += '时间戳：' + time1 + '<br><br>';
-            });
-            window.onload = function() {
-                time2 = new Date().getTime();
-                msgBox.innerHTML += 'window.onload:<br> dom已加载！<br>';
-                msgBox.innerHTML += '时间戳：' + new Date().getTime() + '<br><br>';
-                msgBox.innerHTML += '時間差: ' + (time2 - time1) + '<br>';
-            };
+            var father = document.getElementById('father');
+            var child = document.getElementById('child').childNodes[0];
+            console.log(compatibleContains(father, child)); //true
+            console.log(compatibleContains(document, child)); //true
         </script>
     </body>
 </html>
