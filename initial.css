@@ -38,4 +38,5 @@ html
     left: auto;
     -webkit-transform: none;
     transform: none;
+    scroll-behavior: smooth;
 }

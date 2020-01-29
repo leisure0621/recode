@@ -1,30 +1,68 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>判断是否为XML by 司徒正美</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+            }
+
+            #myBtn {
+                display: none;
+                position: fixed;
+                bottom: 20px;
+                right: 30px;
+                z-index: 99;
+                font-size: 18px;
+                border: none;
+                outline: none;
+                background-color: red;
+                color: white;
+                cursor: pointer;
+                padding: 15px;
+                border-radius: 4px;
+            }
+
+            #myBtn:hover {
+                background-color: #555;
+            }
+        </style>
     </head>
     <body>
-        <div id="father">
-            <div id="child">子节点内容</div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        <div style="background-color:black;color:white;padding:30px">Scroll Down</div>
+        <div style="background-color:lightgrey;padding:30px 30px 2500px">
+            This example demonstrates how to create a "scroll to top" button that becomes visible
+            <strong>when the user starts to scroll the page</strong>
+            .
         </div>
+
         <script>
-            function compatibleContains(a, b) {
-                try {
-                    while ((b = b.parentNode)) {
-                        if (b === a) {
-                            return true;
-                        }
-                    }
-                    return false;
-                } catch (e) {
-                    return false;
+            //Get the button
+            var mybutton = document.getElementById('myBtn');
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {
+                scrollFunction();
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = 'block';
+                } else {
+                    mybutton.style.display = 'none';
                 }
             }
-            var father = document.getElementById('father');
-            var child = document.getElementById('child').childNodes[0];
-            console.log(compatibleContains(father, child)); //true
-            console.log(compatibleContains(document, child)); //true
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                window.scroll({
+                    top: 0,
+                    behavior: 'smooth',
+                });
+            }
         </script>
     </body>
 </html>
